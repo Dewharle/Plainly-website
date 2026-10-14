@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Plainly · Rent and buy straight from the owner</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Figtree:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#0E5A3C}a:hover{color:#0A4630}
+.tip{position:relative;display:inline-flex;align-items:center}
+.tip>[role=tooltip]{position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%);width:max-content;max-width:260px;padding:8px 10px;border-radius:8px;background:#15201A;color:#FFFFFF;font:500 12px/1.45 'Figtree',sans-serif;text-align:left;opacity:0;pointer-events:none;transition:opacity .2s;z-index:20;box-shadow:0 8px 24px -8px rgba(21,32,26,.35)}
+.tip:hover>[role=tooltip],.tip:focus-within>[role=tooltip],.tip.is-open>[role=tooltip]{opacity:1}
+@media (max-width: 640px){.tip>[role=tooltip]{left:auto;right:-8px;transform:none;max-width:min(260px,78vw)}}
+@media (max-width: 860px){.nav-links{display:none !important}.nav-menu{display:inline-flex !important}}
+summary{cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}
+details[open] .faq-plus{transform:rotate(45deg)}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 5610px; box-sizing: border-box; background: #F6F4EE; color: #15201A; font-family: 'Figtree', 'Segoe UI', system-ui, sans-serif; font-size: 16px; line-height: 1.55">
+
+  <!-- Top bar -->
+  <header style="background: rgba(246,244,238,.96); border-bottom: 1px solid #E3DFD4">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+      <a href="W00-Landing.dc.html" aria-label="Plainly home" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #15201A">
+        <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#0E5A3C"></rect><path d="M10 25V13.5a6 6 0 0 1 12 0V25z" fill="#F4B728"></path><circle cx="19" cy="19.5" r="1.3" fill="#0E5A3C"></circle></svg>
+        <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 25px; letter-spacing: -0.03em">plainly</span>
+      </a>
+      <nav aria-label="Main" class="nav-links" style="display: flex; align-items: center; gap: 28px; font-size: 15px; font-weight: 600">
+        <a href="#how" style="color: #3D4A43; text-decoration: none">How it works</a>
+        <a href="W01-Home.dc.html" style="color: #3D4A43; text-decoration: none">Browse homes</a>
+        <a href="#owners" style="color: #3D4A43; text-decoration: none">For owners</a>
+        <a href="#fees" style="color: #3D4A43; text-decoration: none">Fees</a>
+        <a href="A06-SafetyCentre.dc.html" style="color: #3D4A43; text-decoration: none">Safety</a>
+      </nav>
+      <div style="display: flex; align-items: center; gap: 10px">
+        <a href="W08-SignIn.dc.html" style="height: 44px; padding: 0 16px; display: inline-flex; align-items: center; border-radius: 12px; color: #15201A; text-decoration: none; font-weight: 700; font-size: 15px">Log in</a>
+        <a href="W17-Join.dc.html" style="height: 44px; padding: 0 18px; display: inline-flex; align-items: center; border-radius: 12px; background: #0E5A3C; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px">Get started</a>
+        <a href="#roles" class="nav-menu" aria-label="Open menu" style="display: none; width: 44px; height: 44px; align-items: center; justify-content: center; border-radius: 12px; border: 1px solid #E3DFD4; background: #FFFFFF"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#15201A" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section style="position: relative; overflow: hidden">
+    <div aria-hidden="true" style="position: absolute; right: -60px; top: 40px; display: flex; align-items: flex-end; gap: 18px; opacity: .9">
+      <div style="width: 120px; height: 220px; border-radius: 60px 60px 0 0; background: #E2F0E7"></div>
+      <div style="width: 160px; height: 300px; border-radius: 80px 80px 0 0; background: #0E5A3C; position: relative"><div style="position: absolute; left: 34px; right: 34px; bottom: 0; height: 190px; border-radius: 46px 46px 0 0; background: #F4B728"></div></div>
+      <div style="width: 120px; height: 180px; border-radius: 60px 60px 0 0; background: #EFECE4"></div>
+    </div>
+    <div style="position: relative; max-width: 1200px; margin: 0 auto; padding: 72px 24px 32px; display: flex; flex-direction: column; gap: 22px">
+      <span style="align-self: flex-start; height: 32px; padding: 0 14px; display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E3DFD4; font-size: 13px; font-weight: 700; color: #0E5A3C"><span style="width: 8px; height: 8px; border-radius: 9px; background: #1C7A4A"></span>Now open in Lagos · Yaba, Surulere, Gbagada and more</span>
+      <h1 style="margin: 0; max-width: 820px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(40px, 7vw, 80px); line-height: 0.98; letter-spacing: -0.04em; text-wrap: balance">Rent and buy straight from the owner.</h1>
+      <p style="margin: 0; max-width: 640px; font-size: clamp(17px, 2vw, 20px); color: #3D4A43">Verified owners, real walkthrough videos and the full cost to move in, before you ever leave home. No inspection fees. No surprise charges. Your money held safely until you get the keys.</p>
+    </div>
+  </section>
+
+  <!-- Role chooser -->
+  <section id="roles" aria-labelledby="roles-title" style="max-width: 1200px; margin: 0 auto; padding: 8px 24px 64px; display: flex; flex-direction: column; gap: 18px">
+    <h2 id="roles-title" style="margin: 0; font-size: 15px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6862">Start here: which describes you?</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: 20px">
+      <!-- Seeker card -->
+      <article style="background: #FFFFFF; border: 1.5px solid #15201A; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 22px; box-shadow: 0 24px 48px -28px rgba(21,32,26,.35)">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+          <span style="width: 56px; height: 56px; border-radius: 16px; background: #E2F0E7; display: grid; place-items: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg></span>
+          <span style="height: 30px; padding: 0 12px; display: inline-flex; align-items: center; border-radius: 999px; background: #FDF3D3; color: #6B4E00; font-size: 13px; font-weight: 700">Always free for you</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #0E5A3C">Tenant or buyer</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 34px; line-height: 1.05; letter-spacing: -0.02em">I'm looking for a home</h3>
+        </div>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: #3D4A43">
+          <li style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C7A4A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg><span><strong style="color: #15201A">Watch before you visit.</strong> Every rental has a real walkthrough video.</span></li>
+          <li style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C7A4A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg><span><strong style="color: #15201A">See the full cost to move in.</strong> Rent, deposit and every charge, itemised.</span></li>
+          <li style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C7A4A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg><span><strong style="color: #15201A">₦0 to search, chat, view or apply.</strong> No inspection, form or agency fees.</span></li>
+        </ul>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: auto">
+          <a href="W17-Join.dc.html" style="height: 52px; padding: 0 24px; display: inline-flex; align-items: center; gap: 10px; border-radius: 14px; background: #0E5A3C; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 16px">Sign up as a tenant or buyer<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+          <a href="W01-Home.dc.html" style="height: 52px; padding: 0 8px; display: inline-flex; align-items: center; font-weight: 700; font-size: 15px">Browse first, no account</a>
+        </div>
+      </article>
+      <!-- Owner card -->
+      <article id="owner-card" style="background: #15201A; color: #F6F4EE; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 22px; box-shadow: 0 24px 48px -28px rgba(21,32,26,.55)">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+          <span style="width: 56px; height: 56px; border-radius: 16px; background: #F4B728; display: grid; place-items: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#15201A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"></circle><path d="m11 12 9-9M17 6l3 3"></path></svg></span>
+          <span style="height: 30px; padding: 0 12px; display: inline-flex; align-items: center; border-radius: 999px; background: #26342C; color: #F4B728; font-size: 13px; font-weight: 700">First listing free for founding owners</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #F4B728">Landlord or property owner</span>
+          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 34px; line-height: 1.05; letter-spacing: -0.02em">I own property to let or sell</h3>
+        </div>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: #C9D2CC">
+          <li style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5CC28E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg><span><strong style="color: #FFFFFF">ID-checked tenants only.</strong> You approve every viewing and choose your tenant.</span></li>
+          <li style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5CC28E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg><span><strong style="color: #FFFFFF">Guaranteed payment.</strong> Rent is paid into Plainly Secure before you hand over keys.</span></li>
+          <li style="display: flex; gap: 10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5CC28E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 2px"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg><span><strong style="color: #FFFFFF">One clear fee, shown before you start.</strong> No 10% agent cut.</span></li>
+        </ul>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: auto">
+          <a href="W17-Join.dc.html" style="height: 52px; padding: 0 24px; display: inline-flex; align-items: center; gap: 10px; border-radius: 14px; background: #F4B728; color: #15201A; text-decoration: none; font-weight: 700; font-size: 16px">Sign up as an owner<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15201A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+          <a href="#fees" style="height: 52px; padding: 0 8px; display: inline-flex; align-items: center; font-weight: 700; font-size: 15px; color: #F4B728">See what it costs</a>
+        </div>
+      </article>
+    </div>
+    <p style="margin: 0; font-size: 14px; color: #5E6862">Already on Plainly? <a href="W08-SignIn.dc.html" style="font-weight: 700">Log in</a>. You can rent and own on one account, and switch roles any time.</p>
+  </section>
+
+  <!-- Trust strip -->
+  <section aria-label="Why Plainly is safe" style="background: #FFFFFF; border-top: 1px solid #E3DFD4; border-bottom: 1px solid #E3DFD4">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr)); gap: 20px">
+      <div style="display: flex; gap: 12px; align-items: flex-start"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"></path><path d="m8.5 12 2.5 2.5 4.5-5"></path></svg><div><strong style="display: block">Owner-verified listings</strong><span style="font-size: 14px; color: #5E6862">ID and proof of ownership checked</span></div></div>
+      <div style="display: flex; gap: 12px; align-items: flex-start"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><rect x="3" y="6" width="13" height="12" rx="2"></rect><path d="m16 10 5-3v10l-5-3"></path></svg><div><strong style="display: block">Live walkthrough videos</strong><span style="font-size: 14px; color: #5E6862">Filmed at the property, GPS-stamped</span></div></div>
+      <div style="display: flex; gap: 12px; align-items: flex-start"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><div><strong style="display: inline-flex; align-items: center; gap: 6px">Money held in
+        <span class="tip is-open"><button type="button" aria-describedby="tip-secure" style="border: 0; background: transparent; padding: 0; font: 700 16px 'Figtree', sans-serif; color: #0E5A3C; text-decoration: underline dotted; text-underline-offset: 3px; cursor: help">Plainly Secure</button><span role="tooltip" id="tip-secure">Your move-in money goes to a licensed escrow partner, not to Plainly and not to the owner, until you confirm you got the keys.</span></span></strong><span style="display: block; font-size: 14px; color: #5E6862">Released only after handover</span></div></div>
+      <div style="display: flex; gap: 12px; align-items: flex-start"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M3 3l18 18"></path><path d="M10.6 6.1A9.6 9.6 0 0 1 12 6c5 0 9 6 9 6a15 15 0 0 1-2.9 3.3M6.2 7.6C4.2 9.1 3 12 3 12s4 6 9 6a8.6 8.6 0 0 0 3.6-.8"></path></svg><div><strong style="display: block">Numbers stay private</strong><span style="font-size: 14px; color: #5E6862">Contacts unlock only when you both sign</span></div></div>
+    </div>
+  </section>
+
+  <!-- Old way vs Plainly -->
+  <section style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+    <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #0E5A3C">Every cost, plainly shown</span>
+      <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.02; letter-spacing: -0.03em">Stop paying to look. Start paying for a home.</h2>
+      <p style="margin: 0; color: #3D4A43; font-size: 17px">Renting in Lagos usually means inspection fees, a 10% agency fee, another 10% for an agreement nobody drafted, and flats that don't match the photos. On Plainly you deal with the owner, and the only money you pay is for the home itself.</p>
+      <a href="W01-Home.dc.html" style="align-self: flex-start; height: 48px; padding: 0 20px; display: inline-flex; align-items: center; border-radius: 12px; border: 1.5px solid #15201A; color: #15201A; text-decoration: none; font-weight: 700">Browse homes in Lagos</a>
+    </div>
+    <figure style="flex: 1 1 460px; min-width: 0; margin: 0; background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 20px; overflow: hidden">
+      <figcaption style="padding: 18px 24px; border-bottom: 1px solid #E3DFD4; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap"><strong>Worked example · ₦2,000,000/yr flat, 1 year's advance</strong><span style="font-size: 13px; color: #5E6862">Illustration</span></figcaption>
+      <div style="overflow-x: auto">
+        <table style="width: 100%; min-width: 420px; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums">
+          <thead><tr style="background: #EFECE4; text-align: left; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #3D4A43"><th scope="col" style="padding: 10px 24px">Cost</th><th scope="col" style="padding: 10px 12px; text-align: right">Typical route</th><th scope="col" style="padding: 10px 24px; text-align: right; color: #0E5A3C">On Plainly</th></tr></thead>
+          <tbody>
+            <tr style="border-top: 1px solid #E3DFD4"><td style="padding: 12px 24px">Rent, 1 year</td><td style="padding: 12px; text-align: right">₦2,000,000</td><td style="padding: 12px 24px; text-align: right">₦2,000,000</td></tr>
+            <tr style="border-top: 1px solid #E3DFD4"><td style="padding: 12px 24px">Caution deposit (refundable)</td><td style="padding: 12px; text-align: right">₦200,000</td><td style="padding: 12px 24px; text-align: right">₦200,000</td></tr>
+            <tr style="border-top: 1px solid #E3DFD4"><td style="padding: 12px 24px">Agency fee, 10%</td><td style="padding: 12px; text-align: right">₦200,000</td><td style="padding: 12px 24px; text-align: right; font-weight: 700; color: #1C7A4A">₦0</td></tr>
+            <tr style="border-top: 1px solid #E3DFD4"><td style="padding: 12px 24px">Legal / agreement fee, 10%</td><td style="padding: 12px; text-align: right">₦200,000</td><td style="padding: 12px 24px; text-align: right; font-weight: 700; color: #1C7A4A">₦0</td></tr>
+            <tr style="border-top: 1px solid #E3DFD4"><td style="padding: 12px 24px">Inspection and form fees</td><td style="padding: 12px; text-align: right">₦10,000–₦50,000</td><td style="padding: 12px 24px; text-align: right; font-weight: 700; color: #1C7A4A">₦0</td></tr>
+            <tr style="border-top: 2px solid #15201A; background: #FDF3D3"><th scope="row" style="padding: 14px 24px; text-align: left">Cash to move in</th><td style="padding: 14px 12px; text-align: right; font-weight: 700">₦2.61m–₦2.65m</td><td style="padding: 14px 24px; text-align: right; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 20px">₦2,200,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </figure>
+  </section>
+
+  <!-- How it works (interactive tabs) -->
+  <section id="how" style="background: #FFFFFF; border-top: 1px solid #E3DFD4; border-bottom: 1px solid #E3DFD4">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
+        <div style="display: flex; flex-direction: column; gap: 10px; max-width: 620px">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #0E5A3C">How it works</span>
+          <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.02; letter-spacing: -0.03em">Five plain steps, either side of the door.</h2>
+        </div>
+        <div role="tablist" aria-label="Choose your side" style="display: inline-flex; padding: 4px; gap: 4px; background: #EFECE4; border-radius: 14px">
+          <button type="button" role="tab" aria-selected="{{seekerSelected}}" onClick="{{showSeeker}}" style="height: 44px; padding: 0 18px; border: 0; border-radius: 10px; background: {{seekerBg}}; color: {{seekerFg}}; font: 700 15px 'Figtree', sans-serif; cursor: pointer">Tenants &amp; buyers</button>
+          <button type="button" role="tab" aria-selected="{{ownerSelected}}" onClick="{{showOwner}}" style="height: 44px; padding: 0 18px; border: 0; border-radius: 10px; background: {{ownerBg}}; color: {{ownerFg}}; font: 700 15px 'Figtree', sans-serif; cursor: pointer">Owners &amp; landlords</button>
+        </div>
+      </div>
+      <sc-if value="{{isSeeker}}" hint-placeholder-val="{{ true }}">
+        <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 16px">
+          <li style="background: #F6F4EE; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 36px; color: #0E5A3C; line-height: 1">1</span><strong>Search and watch</strong><span style="font-size: 14px; color: #3D4A43">Filter by area and total move-in cost. Watch the walkthrough video.</span></li>
+          <li style="background: #F6F4EE; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 36px; color: #0E5A3C; line-height: 1">2</span><strong>Verify once</strong><span style="font-size: 14px; color: #3D4A43">A quick NIN and selfie check lets you chat and book viewings.</span></li>
+          <li style="background: #F6F4EE; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 36px; color: #0E5A3C; line-height: 1">3</span><strong>Chat and view, free</strong><span style="font-size: 14px; color: #3D4A43">Talk to the owner with your number hidden. Book a free viewing.</span></li>
+          <li style="background: #F6F4EE; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 36px; color: #0E5A3C; line-height: 1">4</span><strong>Apply and sign</strong><span style="font-size: 14px; color: #3D4A43">Send your tenant profile. Sign a standard agreement in the app.</span></li>
+          <li style="background: #15201A; color: #F6F4EE; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 36px; color: #F4B728; line-height: 1">5</span><strong>Pay safely, get keys</strong><span style="font-size: 14px; color: #C9D2CC">Pay into Plainly Secure. The owner is paid after you move in.</span></li>
+        </ol>
+        <a href="W17-Join.dc.html" style="align-self: flex-start; height: 52px; padding: 0 24px; display: inline-flex; align-items: center; border-radius: 14px; background: #0E5A3C; color: #FFFFFF; text-decoration: none; font-weight: 700">Find a home on Plainly</a>
+      </sc-if>
+      <sc-if value="{{isOwner}}" hint-placeholder-val="{{ false }}">
+        <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 16px">
+          <li style="background: #F6F4EE; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 36px; color: #0E5A3C; line-height: 1">1</span><strong>See your fee first</strong><span style="font-size: 14px; color: #3D4A43">Your listing fee is shown before you start. Founding owners list free.</span></li>
+          <li style="background: #F6F4EE; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 36px; color: #0E5A3C; line-height: 1">2</span><strong>Film and list</strong><span style="font-size: 14px; color: #3D4A43">Record a live walkthrough, set your terms. Drafts save offline.</span></li>
+          <li style="background: #F6F4EE; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 36px; color: #0E5A3C; line-height: 1">3</span><strong>Get verified</strong><span style="font-size: 14px; color: #3D4A43">Upload proof of ownership. Most decisions within 24 hours.</span></li>
+          <li style="background: #F6F4EE; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 36px; color: #0E5A3C; line-height: 1">4</span><strong>Choose your tenant</strong><span style="font-size: 14px; color: #3D4A43">Approve viewings, compare ID-checked applicants, accept one.</span></li>
+          <li style="background: #15201A; color: #F6F4EE; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 36px; color: #F4B728; line-height: 1">5</span><strong>Hand over, get paid</strong><span style="font-size: 14px; color: #C9D2CC">Money is already secured. You're paid at handover, fee deducted.</span></li>
+        </ol>
+        <a href="W17-Join.dc.html" style="align-self: flex-start; height: 52px; padding: 0 24px; display: inline-flex; align-items: center; border-radius: 14px; background: #15201A; color: #FFFFFF; text-decoration: none; font-weight: 700">List your property</a>
+      </sc-if>
+    </div>
+  </section>
+
+  <!-- Plainly Secure money flow -->
+  <section style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; flex-direction: column; gap: 10px; max-width: 700px">
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #0E5A3C">Plainly Secure</span>
+      <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.02; letter-spacing: -0.03em">Nobody touches the money until the keys change hands.</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 16px; align-items: stretch">
+      <div style="background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6862">Step 1 · Both sign</span><strong style="font-size: 18px">Agreement signed in the app</strong><span style="font-size: 14px; color: #3D4A43">Standard Lagos tenancy, reviewed by Nigerian counsel. Contacts unlock now.</span></div>
+      <div style="background: #0E5A3C; color: #FFFFFF; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #F4B728">Step 2 · Tenant pays</span><strong style="font-size: 18px">₦2,200,000 into Plainly Secure</strong><span style="font-size: 14px; color: #E2F0E7">Held by a licensed escrow partner. Transfer, USSD or card.</span></div>
+      <div style="background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #5E6862">Step 3 · Handover</span><strong style="font-size: 18px">Keys handed over, move-in confirmed</strong><span style="font-size: 14px; color: #3D4A43">Or released automatically 72 hours after handover if nobody raises an issue.</span></div>
+      <div style="background: #FDF3D3; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #6B4E00">Step 4 · Owner paid</span><strong style="font-size: 18px">₦2,150,000 to the owner's verified bank</strong><span style="font-size: 14px; color: #6B4E00">Plainly's closing fee is deducted here, with the listing fee credited back.</span></div>
+    </div>
+    <p style="margin: 0; display: flex; gap: 10px; align-items: center; font-weight: 600"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>Plainly can only protect money paid through Plainly.</p>
+  </section>
+
+  <!-- For owners + Fees -->
+  <section id="owners" style="background: #15201A; color: #F6F4EE">
+    <div id="fees" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px">
+      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #F4B728">Fees, plainly</span>
+        <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.02; letter-spacing: -0.03em">Free for seekers. Fair for owners.</h2>
+        <p style="margin: 0; color: #C9D2CC; font-size: 17px">Tenants and buyers never pay to search, chat, view or apply, and never a percentage of rent. Owners pay a small listing fee to publish and a closing fee only when the deal completes through Plainly Secure. You pay once, not twice: your listing fee is credited against the closing fee.</p>
+        <div style="background: #26342C; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 8px">
+          <strong style="color: #F4B728">Owner example · ₦2,000,000/yr flat</strong>
+          <div style="display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; font-size: 15px; font-variant-numeric: tabular-nums; color: #E6ECE8">
+            <span>Listing fee to publish (90 days)</span><span>₦10,000</span>
+            <span>Closing fee, 3% of first year's rent</span><span>₦60,000</span>
+            <span>Listing fee credited back</span><span>−₦10,000</span>
+            <strong style="color: #FFFFFF; padding-top: 6px; border-top: 1px solid #3A4A41">Total you pay Plainly</strong><strong style="color: #FFFFFF; padding-top: 6px; border-top: 1px solid #3A4A41">₦60,000</strong>
+          </div>
+          <span style="font-size: 13px; color: #A9B6AE">Against a typical 10% agent fee of ₦200,000. Prices are launch prices and may change; every fee is shown before you commit.</span>
+        </div>
+      </div>
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <div style="background: #F6F4EE; color: #15201A; border-radius: 20px; overflow: hidden">
+          <div style="padding: 18px 22px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap"><strong style="font-size: 18px">Listing fee per 90 days</strong><span style="font-size: 13px; color: #5E6862">Rent and lease, by annual rent</span></div>
+          <div style="display: grid; grid-template-columns: 1fr auto; font-size: 15px; font-variant-numeric: tabular-nums">
+            <span style="padding: 12px 22px; border-top: 1px solid #E3DFD4">Under ₦1m</span><strong style="padding: 12px 22px; border-top: 1px solid #E3DFD4">₦5,000</strong>
+            <span style="padding: 12px 22px; border-top: 1px solid #E3DFD4; background: #FDF3D3">₦1m – ₦3m</span><strong style="padding: 12px 22px; border-top: 1px solid #E3DFD4; background: #FDF3D3">₦10,000</strong>
+            <span style="padding: 12px 22px; border-top: 1px solid #E3DFD4">₦3m – ₦10m</span><strong style="padding: 12px 22px; border-top: 1px solid #E3DFD4">₦20,000</strong>
+            <span style="padding: 12px 22px; border-top: 1px solid #E3DFD4">Over ₦10m</span><strong style="padding: 12px 22px; border-top: 1px solid #E3DFD4">₦35,000</strong>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 1fr)); gap: 14px">
+          <div style="background: #26342C; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 4px"><strong style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 28px; color: #F4B728">3%</strong><span style="font-size: 14px; color: #C9D2CC">Closing fee on first year's rent (minimum ₦15,000), only through Plainly Secure</span></div>
+          <div style="background: #26342C; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 4px"><strong style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 28px; color: #F4B728">₦0</strong><span style="font-size: 14px; color: #C9D2CC">First listing for the first 500 verified founding owners in launch areas</span></div>
+        </div>
+        <a href="W17-Join.dc.html" style="align-self: flex-start; height: 52px; padding: 0 24px; display: inline-flex; align-items: center; border-radius: 14px; background: #F4B728; color: #15201A; text-decoration: none; font-weight: 700">Sign up as an owner</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety -->
+  <section style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
+    <div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #0E5A3C">Safety</span>
+      <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(30px, 4vw, 44px); line-height: 1.05; letter-spacing: -0.03em">What Plainly will never ask you to do</h2>
+      <a href="A06-SafetyCentre.dc.html" style="font-weight: 700">Visit the safety centre</a>
+    </div>
+    <ul style="flex: 2 1 520px; min-width: 0; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 12px">
+      <li style="background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 14px; padding: 16px 18px; display: flex; gap: 12px; align-items: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B3261E" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex: none"><path d="M6 6l12 12M18 6 6 18"></path></svg>Pay an inspection or viewing fee</li>
+      <li style="background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 14px; padding: 16px 18px; display: flex; gap: 12px; align-items: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B3261E" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex: none"><path d="M6 6l12 12M18 6 6 18"></path></svg>Pay anything before you've viewed</li>
+      <li style="background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 14px; padding: 16px 18px; display: flex; gap: 12px; align-items: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B3261E" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex: none"><path d="M6 6l12 12M18 6 6 18"></path></svg>Pay into a personal bank account</li>
+      <li style="background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 14px; padding: 16px 18px; display: flex; gap: 12px; align-items: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B3261E" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex: none"><path d="M6 6l12 12M18 6 6 18"></path></svg>Share your OTP, PIN or password</li>
+    </ul>
+  </section>
+
+  <!-- FAQ -->
+  <section style="background: #FFFFFF; border-top: 1px solid #E3DFD4; border-bottom: 1px solid #E3DFD4">
+    <div style="max-width: 860px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 24px">
+      <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(30px, 4vw, 44px); letter-spacing: -0.03em">Questions, answered plainly</h2>
+      <div style="display: flex; flex-direction: column">
+        <details open style="border-top: 1px solid #E3DFD4; padding: 18px 0"><summary style="display: flex; justify-content: space-between; gap: 16px; font-weight: 700; font-size: 17px; min-height: 44px; align-items: center">Is Plainly really free for tenants?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; color: #0E5A3C; transition: transform .2s">+</span></summary><p style="margin: 8px 0 0; color: #3D4A43">Yes. Searching, chatting, booking viewings and applying are always free. You pay only what's on the listing: rent, deposit and any itemised charge, all shown before you view.</p></details>
+        <details style="border-top: 1px solid #E3DFD4; padding: 18px 0"><summary style="display: flex; justify-content: space-between; gap: 16px; font-weight: 700; font-size: 17px; min-height: 44px; align-items: center">Why can't I see the owner's phone number?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; color: #0E5A3C; transition: transform .2s">+</span></summary><p style="margin: 8px 0 0; color: #3D4A43">Numbers stay hidden until you both sign the agreement, so every step of your deal is recorded and protected. You can chat and call in the app before then.</p></details>
+        <details style="border-top: 1px solid #E3DFD4; padding: 18px 0"><summary style="display: flex; justify-content: space-between; gap: 16px; font-weight: 700; font-size: 17px; min-height: 44px; align-items: center">What does "Owner verified" mean?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; color: #0E5A3C; transition: transform .2s">+</span></summary><p style="margin: 8px 0 0; color: #3D4A43">We checked the owner's ID and a document showing they control the property, such as a Land Use Charge demand. Badges always say what was checked and when. Plainly does not certify title.</p></details>
+        <details style="border-top: 1px solid #E3DFD4; padding: 18px 0"><summary style="display: flex; justify-content: space-between; gap: 16px; font-weight: 700; font-size: 17px; min-height: 44px; align-items: center">Can agents list on Plainly?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; color: #0E5A3C; transition: transform .2s">+</span></summary><p style="margin: 8px 0 0; color: #3D4A43">Later, as a clearly labelled option: LASRERA-registered agents with a signed owner mandate, fees capped and shown on the listing. You can always filter to "Owner only".</p></details>
+        <details style="border-top: 1px solid #E3DFD4; border-bottom: 1px solid #E3DFD4; padding: 18px 0"><summary style="display: flex; justify-content: space-between; gap: 16px; font-weight: 700; font-size: 17px; min-height: 44px; align-items: center">I'm a landlord. When do I pay?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; color: #0E5A3C; transition: transform .2s">+</span></summary><p style="margin: 8px 0 0; color: #3D4A43">The listing fee is charged when you submit a listing for verification. The closing fee is deducted from your payout only when a tenant pays through Plainly Secure, with your listing fee credited back.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px">
+    <svg width="64" height="64" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#0E5A3C"></rect><path d="M10 25V13.5a6 6 0 0 1 12 0V25z" fill="#F4B728"></path><circle cx="19" cy="19.5" r="1.3" fill="#0E5A3C"></circle></svg>
+    <h2 style="margin: 0; max-width: 760px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(34px, 5vw, 60px); line-height: 1; letter-spacing: -0.035em">Plainly. Straight to the owner.</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px">
+      <a href="W17-Join.dc.html" style="height: 54px; padding: 0 26px; display: inline-flex; align-items: center; border-radius: 14px; background: #0E5A3C; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 16px">I'm looking for a home</a>
+      <a href="W17-Join.dc.html" style="height: 54px; padding: 0 26px; display: inline-flex; align-items: center; border-radius: 14px; background: #15201A; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 16px">I own property</a>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding-top: 6px">
+      <a href="A01-Splash.dc.html" style="height: 48px; padding: 0 18px; display: inline-flex; align-items: center; gap: 10px; border-radius: 12px; border: 1.5px solid #15201A; color: #15201A; text-decoration: none; font-weight: 700; font-size: 14px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15201A" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"></rect><path d="M11 18h2"></path></svg>Get it on Google Play</a>
+      <a href="A01-Splash.dc.html" style="height: 48px; padding: 0 18px; display: inline-flex; align-items: center; gap: 10px; border-radius: 12px; border: 1.5px solid #15201A; color: #15201A; text-decoration: none; font-weight: 700; font-size: 14px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15201A" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"></rect><path d="M11 18h2"></path></svg>Download on the App Store</a>
+    </div>
+    <span style="font-size: 13px; color: #5E6862">Works on low-data connections. Data saver turns on automatically on 2G/3G.</span>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background: #15201A; color: #C9D2CC">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 28px; font-size: 14px">
+      <div style="display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; color: #FFFFFF; letter-spacing: -0.03em">plainly</span><span>Every cost, plainly shown.</span><span>Lagos, Nigeria</span></div>
+      <nav aria-label="Seekers" style="display: flex; flex-direction: column; gap: 8px"><strong style="color: #FFFFFF">Tenants & buyers</strong><a href="W01-Home.dc.html" style="color: #C9D2CC; text-decoration: none">Browse homes</a><a href="W17-Join.dc.html" style="color: #C9D2CC; text-decoration: none">Create an account</a><a href="#how" style="color: #C9D2CC; text-decoration: none">How it works</a></nav>
+      <nav aria-label="Owners" style="display: flex; flex-direction: column; gap: 8px"><strong style="color: #FFFFFF">Owners</strong><a href="W17-Join.dc.html" style="color: #C9D2CC; text-decoration: none">List your property</a><a href="#fees" style="color: #C9D2CC; text-decoration: none">Fees</a><a href="W08-SignIn.dc.html" style="color: #C9D2CC; text-decoration: none">Owner log in</a></nav>
+      <nav aria-label="Company" style="display: flex; flex-direction: column; gap: 8px"><strong style="color: #FFFFFF">Trust</strong><a href="A06-SafetyCentre.dc.html" style="color: #C9D2CC; text-decoration: none">Safety centre</a><a href="#roles" style="color: #C9D2CC; text-decoration: none">Terms</a><a href="#roles" style="color: #C9D2CC; text-decoration: none">Privacy</a></nav>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":5610}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { tab: 'seeker' }; }
+  renderVals() {
+    const isSeeker = (this.state && this.state.tab) !== 'owner';
+    return {
+      isSeeker: isSeeker,
+      isOwner: !isSeeker,
+      seekerSelected: isSeeker ? 'true' : 'false',
+      ownerSelected: isSeeker ? 'false' : 'true',
+      seekerBg: isSeeker ? '#15201A' : 'transparent',
+      seekerFg: isSeeker ? '#FFFFFF' : '#3D4A43',
+      ownerBg: isSeeker ? 'transparent' : '#15201A',
+      ownerFg: isSeeker ? '#3D4A43' : '#FFFFFF',
+      showSeeker: () => this.setState({ tab: 'seeker' }),
+      showOwner: () => this.setState({ tab: 'owner' })
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Plainly · Home and search (web)</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Figtree:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#0E5A3C}a:hover{color:#0A4630}
+.tip{position:relative;display:inline-flex;align-items:center}
+.tip>[role=tooltip]{position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%);width:max-content;max-width:260px;padding:8px 10px;border-radius:8px;background:#15201A;color:#FFFFFF;font:500 12px/1.45 'Figtree',sans-serif;text-align:left;opacity:0;pointer-events:none;transition:opacity .2s;z-index:20;box-shadow:0 8px 24px -8px rgba(21,32,26,.35)}
+.tip:hover>[role=tooltip],.tip:focus-within>[role=tooltip],.tip.is-open>[role=tooltip]{opacity:1}
+@media (max-width: 640px){.tip>[role=tooltip]{left:auto;right:-8px;transform:none;max-width:min(260px,78vw)}}
+</style>
+</helmet>
+<div style="width: 100%; min-height: 2700px; box-sizing: border-box; background: #F6F4EE; color: #15201A; font-family: 'Figtree', 'Segoe UI', system-ui, sans-serif; font-size: 16px; line-height: 1.5; display: flex; flex-direction: column; overflow-x: hidden">
+
+  <!-- PUBLIC top bar -->
+  <header style="background: #FFFFFF; border-bottom: 1px solid #E3DFD4">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 12px 32px; min-height: 72px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
+      <a href="W00-Landing.dc.html" aria-label="Plainly home" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #15201A">
+        <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#0E5A3C"></rect><path d="M10 25V13.5a6 6 0 0 1 12 0V25z" fill="#F4B728"></path><circle cx="19" cy="19.5" r="1.3" fill="#0E5A3C"></circle></svg>
+        <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.03em">plainly</span>
+      </a>
+      <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px">
+        <a href="W02-Search.dc.html" style="height: 44px; display: flex; align-items: center; text-decoration: none; font-size: 15px; font-weight: 600; color: #3D4A43">Rent</a>
+        <a href="W02-Search.dc.html" style="height: 44px; display: flex; align-items: center; text-decoration: none; font-size: 15px; font-weight: 600; color: #3D4A43">Buy</a>
+        <a href="W02-Search.dc.html" style="height: 44px; display: flex; align-items: center; text-decoration: none; font-size: 15px; font-weight: 600; color: #3D4A43">Land</a>
+        <a href="W10-CreateListing.dc.html" style="height: 44px; display: flex; align-items: center; text-decoration: none; font-size: 15px; font-weight: 600; color: #3D4A43">For owners</a>
+        <a href="A06-SafetyCentre.dc.html" style="height: 44px; display: flex; align-items: center; text-decoration: none; font-size: 15px; font-weight: 600; color: #3D4A43">Safety centre</a>
+      </nav>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+        <a href="W10-CreateListing.dc.html" style="height: 44px; padding: 0 16px; box-sizing: border-box; display: flex; align-items: center; border-radius: 12px; border: 1.5px solid #15201A; background: #FFFFFF; color: #15201A; text-decoration: none; font-size: 15px; font-weight: 700">List your property</a>
+        <a href="W08-SignIn.dc.html" style="height: 44px; padding: 0 20px; box-sizing: border-box; display: flex; align-items: center; border-radius: 12px; background: #0E5A3C; color: #FFFFFF; text-decoration: none; font-size: 15px; font-weight: 700">Sign in</a>
+      </div>
+    </div>
+  </header>
+
+  <main style="flex: 1; display: flex; flex-direction: column">
+
+    <!-- (a) Hero -->
+    <section aria-labelledby="h-hero" style="padding: 56px 0 64px">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+
+        <!-- Left: headline + search -->
+        <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px; position: relative; z-index: 2">
+          <span style="align-self: flex-start; height: 30px; padding: 0 12px; display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; background: #E2F0E7; color: #0E5A3C; font-size: 13px; font-weight: 700"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>Homes and land across Lagos</span>
+          <h1 id="h-hero" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(40px, 5vw, 64px); line-height: 1.02; letter-spacing: -0.035em; text-wrap: balance; max-width: 680px">Rent and buy straight from the owner.</h1>
+          <p style="margin: 0; font-size: 19px; line-height: 1.55; color: #3D4A43; max-width: 580px">Verified owners, real walkthrough videos and the full cost to move in — before you view. Free for seekers, always.</p>
+
+          <!-- Search panel -->
+          <form role="search" aria-label="Search homes" style="margin: 0; background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 24px 48px -12px rgba(21,32,26,.22); max-width: 720px">
+            <div role="tablist" aria-label="What are you looking for" style="align-self: flex-start; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; padding: 4px; background: #EFECE4; border-radius: 12px; width: min(380px, 100%); box-sizing: border-box">
+              <button type="button" role="tab" aria-selected="true" style="height: 40px; border: 0; border-radius: 9px; background: #15201A; color: #FFFFFF; font: 600 14px 'Figtree', sans-serif">Rent</button>
+              <button type="button" role="tab" aria-selected="false" style="height: 40px; border: 0; border-radius: 9px; background: transparent; color: #3D4A43; font: 600 14px 'Figtree', sans-serif">Lease</button>
+              <button type="button" role="tab" aria-selected="false" style="height: 40px; border: 0; border-radius: 9px; background: transparent; color: #3D4A43; font: 600 14px 'Figtree', sans-serif">Buy</button>
+              <button type="button" role="tab" aria-selected="false" style="height: 40px; border: 0; border-radius: 9px; background: transparent; color: #3D4A43; font: 600 14px 'Figtree', sans-serif">Land</button>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px">
+              <!-- Area with autocomplete -->
+              <div style="flex: 2 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 6px; position: relative">
+                <label for="w01-area" style="font-size: 14px; font-weight: 600">Area, estate or landmark</label>
+                <div style="height: 52px; box-sizing: border-box; display: flex; align-items: center; gap: 10px; padding: 0 14px; border: 2px solid #0E5A3C; border-radius: 12px; background: #FFFFFF; box-shadow: 0 0 0 3px #E2F0E7">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+                  <input id="w01-area" type="text" role="combobox" aria-expanded="true" aria-controls="w01-area-list" aria-autocomplete="list" aria-activedescendant="w01-opt-2" value="Yaba" style="flex: 1; min-width: 0; border: 0; outline: none; background: transparent; font: 500 16px 'Figtree', sans-serif; color: #15201A">
+                  <button type="button" aria-label="Clear area" style="width: 32px; height: 32px; border: 0; border-radius: 8px; background: #EFECE4; display: grid; place-items: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3D4A43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg></button>
+                </div>
+                <!-- Autocomplete dropdown (open) -->
+                <div style="position: absolute; top: calc(100% + 8px); left: 0; right: 0; min-width: 260px; z-index: 30; background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 14px; padding: 6px; box-sizing: border-box; box-shadow: 0 24px 48px -12px rgba(21,32,26,.32)">
+                  <button type="button" style="width: 100%; min-height: 44px; display: flex; align-items: center; gap: 10px; padding: 0 10px; border: 0; border-radius: 10px; background: transparent; color: #0E5A3C; font: 700 15px 'Figtree', sans-serif; text-align: left"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 21 3l-8 18-2-8z"></path></svg>Use my location</button>
+                  <div style="height: 1px; background: #E3DFD4; margin: 4px 10px"></div>
+                  <ul id="w01-area-list" role="listbox" aria-label="Area suggestions" style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+                    <li id="w01-opt-1" role="option" aria-selected="false" style="min-height: 48px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 10px; border-radius: 10px">
+                      <span style="display: flex; align-items: center; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E6862" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"></path><path d="M9 4v14M15 6v14"></path></svg><span><strong>Yaba</strong></span></span>
+                      <span style="font-size: 13px; color: #5E6862">Area · Lagos Mainland</span>
+                    </li>
+                    <li id="w01-opt-2" role="option" aria-selected="true" style="min-height: 48px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 10px; border-radius: 10px; background: #E2F0E7">
+                      <span style="display: flex; align-items: center; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg><span><strong>Yaba</strong> – Alagomeji</span></span>
+                      <span style="font-size: 13px; color: #0A4630">Neighbourhood</span>
+                    </li>
+                    <li id="w01-opt-3" role="option" aria-selected="false" style="min-height: 48px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 10px; border-radius: 10px">
+                      <span style="display: flex; align-items: center; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E6862" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg><span><strong>Yaba</strong> – Onike</span></span>
+                      <span style="font-size: 13px; color: #5E6862">Neighbourhood</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Budget -->
+              <div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+                <label for="w01-budget" style="font-size: 14px; font-weight: 600">Total move-in up to</label>
+                <div style="height: 52px; box-sizing: border-box; display: flex; align-items: center; gap: 8px; padding: 0 12px 0 14px; border: 1.5px solid #CFC9BA; border-radius: 12px; background: #FFFFFF">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5E6862" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 20V4l10 16V4M4 10h16M4 14h16"></path></svg>
+                  <select id="w01-budget" style="flex: 1; min-width: 0; height: 48px; border: 0; outline: none; background: transparent; font: 600 16px 'Figtree', sans-serif; color: #15201A; font-variant-numeric: tabular-nums">
+                    <option>Any amount</option>
+                    <option>₦1,000,000</option>
+                    <option>₦1,500,000</option>
+                    <option selected>₦2,500,000</option>
+                    <option>₦5,000,000</option>
+                  </select>
+                </div>
+              </div>
+              <a href="W02-Search.dc.html" style="flex: 0 1 auto; height: 52px; padding: 0 26px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; gap: 8px; border-radius: 12px; background: #0E5A3C; color: #FFFFFF; text-decoration: none; font-size: 16px; font-weight: 700"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>Search</a>
+            </div>
+            <span style="font-size: 13px; color: #5E6862">Budget is the total to move in — rent, deposit and every fee — not just the yearly rent.</span>
+          </form>
+          <span style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; font-size: 14px; color: #3D4A43">
+            <span style="display: inline-flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C7A4A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>No sign-up to search or watch</span>
+            <span style="display: inline-flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C7A4A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>Data saver on slow networks</span>
+          </span>
+        </div>
+
+        <!-- Right: composed visual -->
+        <div style="flex: 1 1 420px; min-width: 0; position: relative; min-height: 580px">
+          <div aria-hidden="true" style="position: absolute; top: 40px; right: 0; bottom: 30px; left: 40px; border-radius: 32px; background: #EFECE4"></div>
+
+          <!-- Owner verified bubble -->
+          <div aria-hidden="true" style="position: absolute; top: 0; left: 8px; z-index: 3; max-width: 250px; padding: 10px 12px; border-radius: 10px; background: #15201A; color: #FFFFFF; font-size: 12px; line-height: 1.45; box-shadow: 0 8px 24px -8px rgba(21,32,26,.35)">
+            <strong style="display: block; font-size: 13px">Owner verified</strong>
+            ID checked 12 Oct 2026 · proof of control reviewed 13 Oct 2026
+            <span style="position: absolute; left: 30px; bottom: -5px; width: 10px; height: 10px; background: #15201A; transform: rotate(45deg)"></span>
+          </div>
+
+          <!-- Listing card -->
+          <a href="W03-Listing.dc.html" style="position: absolute; top: 76px; left: 0; z-index: 1; width: min(360px, 86%); display: flex; flex-direction: column; background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 18px; overflow: hidden; color: #15201A; text-decoration: none; box-shadow: 0 8px 24px -8px rgba(21,32,26,.22)">
+            <div style="height: 190px; position: relative; background: #C9D6CD; background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.18) 0 2px, transparent 2px 14px); display: flex; align-items: center; justify-content: center">
+              <span style="width: 56px; height: 56px; border-radius: 999px; background: rgba(21,32,26,.72); display: grid; place-items: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span>
+              <div style="position: absolute; top: 10px; left: 10px; display: flex; gap: 6px">
+                <span style="height: 26px; padding: 0 9px; display: flex; align-items: center; gap: 5px; border-radius: 999px; background: #FFFFFF; font-size: 12px; font-weight: 700; color: #0E5A3C; box-shadow: 0 0 0 2px #15201A"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"></path><path d="m8.5 12 2.5 2.5 4.5-5"></path></svg>Owner verified</span>
+                <span style="height: 26px; padding: 0 9px; display: flex; align-items: center; gap: 5px; border-radius: 999px; background: #15201A; font-size: 12px; font-weight: 700; color: #FFFFFF"><span style="width: 7px; height: 7px; border-radius: 9px; background: #F4B728"></span>Live video</span>
+              </div>
+              <span style="position: absolute; bottom: 10px; left: 10px; height: 24px; padding: 0 8px; display: flex; align-items: center; border-radius: 6px; background: rgba(21,32,26,.72); color: #FFFFFF; font-size: 12px; font-weight: 600">2:14 · walkthrough</span>
+              <span style="position: absolute; bottom: 12px; right: 12px; font-size: 10px; font-weight: 700; letter-spacing: 0.08em; color: rgba(255,255,255,.85)">PLAINLY · PL-24817</span>
+            </div>
+            <div style="padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px">
+              <div style="display: flex; flex-direction: column; gap: 2px">
+                <span style="font-weight: 700; font-size: 17px">2-bed flat · Alagomeji, Yaba</span>
+                <span style="font-size: 13px; color: #3D4A43">2 bed · 2 bath · Prepaid meter · Borehole</span>
+              </div>
+              <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 8px; padding-top: 8px; border-top: 1px dashed #E3DFD4">
+                <div style="display: flex; flex-direction: column">
+                  <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #5E6862">To move in</span>
+                  <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px; font-variant-numeric: tabular-nums; letter-spacing: -0.02em">₦2,200,000</span>
+                </div>
+                <span style="font-size: 13px; color: #3D4A43; text-align: right">₦2,000,000/yr<br>1 yr advance · Fair Terms</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Cost ledger card -->
+          <div aria-label="Example cost to move in" role="group" style="position: absolute; right: 0; bottom: 0; z-index: 2; width: min(300px, 78%); box-sizing: border-box; background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 18px; overflow: hidden; box-shadow: 0 24px 48px -12px rgba(21,32,26,.32)">
+            <div style="padding: 14px 16px 10px; background: #FDF3D3; display: flex; justify-content: space-between; align-items: center; gap: 8px">
+              <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #6B4E00">Cost to move in</span>
+              <span style="font-size: 12px; font-weight: 600; color: #6B4E00">PL-24817</span>
+            </div>
+            <dl style="margin: 0; padding: 6px 16px 14px; display: flex; flex-direction: column; font-size: 14px; font-variant-numeric: tabular-nums">
+              <div style="display: flex; justify-content: space-between; gap: 12px; padding: 7px 0"><dt style="color: #3D4A43">Rent · 1 year</dt><dd style="margin: 0; font-weight: 600">₦2,000,000</dd></div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-top: 1px solid #E3DFD4"><dt style="color: #3D4A43">Caution deposit</dt><dd style="margin: 0; font-weight: 600">₦200,000</dd></div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-top: 1px solid #E3DFD4"><dt style="color: #3D4A43">Agency fee</dt><dd style="margin: 0; font-weight: 600; color: #145C37">₦0</dd></div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-top: 1px solid #E3DFD4"><dt style="color: #3D4A43">Legal / agreement</dt><dd style="margin: 0; font-weight: 600; color: #145C37">₦0</dd></div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-top: 1px solid #E3DFD4"><dt style="color: #3D4A43">Inspection fee</dt><dd style="margin: 0; font-weight: 600; color: #145C37">₦0</dd></div>
+              <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 10px 0 0; border-top: 1.5px solid #15201A"><dt style="font-weight: 700">Total</dt><dd style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.02em">₦2,200,000</dd></div>
+            </dl>
+            <div style="padding: 10px 16px; border-top: 1px solid #E3DFD4; display: flex; align-items: center; gap: 8px; font-size: 12px; color: #0A4630; font-weight: 600; background: #E2F0E7"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg>That's everything. Paid through Plainly Secure.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- (b) ₦0 promise band -->
+    <section aria-labelledby="h-free" style="background: #15201A; color: #F6F4EE">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 48px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 32px 48px">
+        <div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+          <h2 id="h-free" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(28px, 3vw, 36px); line-height: 1.1; letter-spacing: -0.02em">Free for seekers. Always.</h2>
+          <p style="margin: 0; font-size: 16px; color: #C9D2CC; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px">No inspection, form or agency fees on Plainly. Who pays, then?
+            <span class="tip is-open">
+              <button type="button" aria-label="How Plainly makes money" aria-describedby="t-free" style="width: 32px; height: 32px; border: 1px solid #3D4A43; border-radius: 999px; background: #26342C; display: grid; place-items: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F4B728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5M12 8h.01"></path></svg></button>
+              <span role="tooltip" id="t-free" style="background: #FFFFFF; color: #15201A">Owners pay a listing fee to publish. Plainly never charges seekers a percentage of rent.</span>
+            </span>
+          </p>
+        </div>
+        <ul style="flex: 999 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 12px">
+          <li style="padding: 18px 20px; border-radius: 16px; background: #1E2B24; border: 1px solid #26342C; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 44px; line-height: 1; letter-spacing: -0.03em; color: #F4B728">₦0</span><span style="font-size: 16px; font-weight: 600">to search</span></li>
+          <li style="padding: 18px 20px; border-radius: 16px; background: #1E2B24; border: 1px solid #26342C; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 44px; line-height: 1; letter-spacing: -0.03em; color: #F4B728">₦0</span><span style="font-size: 16px; font-weight: 600">to chat</span></li>
+          <li style="padding: 18px 20px; border-radius: 16px; background: #1E2B24; border: 1px solid #26342C; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 44px; line-height: 1; letter-spacing: -0.03em; color: #F4B728">₦0</span><span style="font-size: 16px; font-weight: 600">to view</span></li>
+          <li style="padding: 18px 20px; border-radius: 16px; background: #1E2B24; border: 1px solid #26342C; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 44px; line-height: 1; letter-spacing: -0.03em; color: #F4B728">₦0</span><span style="font-size: 16px; font-weight: 600">to apply</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- (c) How Plainly works -->
+    <section aria-labelledby="h-how" style="padding: 72px 0 0">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #0E5A3C">For seekers</span>
+          <h2 id="h-how" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1; letter-spacing: -0.02em">How Plainly works</h2>
+        </div>
+        <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 16px">
+          <li style="background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; justify-content: space-between; align-items: center"><span style="width: 48px; height: 48px; border-radius: 14px; background: #E2F0E7; display: grid; place-items: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2"></rect><path d="m16 10 5-3v10l-5-3"></path></svg></span><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 32px; color: #CFC9BA; line-height: 1">1</span></div>
+            <h3 style="margin: 0; font-size: 20px; font-weight: 700">Watch the video</h3>
+            <p style="margin: 0; font-size: 15px; color: #3D4A43">Every rental has a walkthrough. “Live video” means it was filmed in the app, at the property.</p>
+          </li>
+          <li style="background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; justify-content: space-between; align-items: center"><span style="width: 48px; height: 48px; border-radius: 14px; background: #FDF3D3; display: grid; place-items: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#15201A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 20V4l10 16V4M4 10h16M4 14h16"></path></svg></span><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 32px; color: #CFC9BA; line-height: 1">2</span></div>
+            <h3 style="margin: 0; font-size: 20px; font-weight: 700">See the full cost</h3>
+            <p style="margin: 0; font-size: 15px; color: #3D4A43">The total to move in leads every listing: rent, advance, deposit and any fee, itemised.</p>
+          </li>
+          <li style="background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; justify-content: space-between; align-items: center"><span style="width: 48px; height: 48px; border-radius: 14px; background: #E5EEFB; display: grid; place-items: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#164A90" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3l18 18"></path><path d="M10.6 6.1A9.6 9.6 0 0 1 12 6c5 0 9 6 9 6a15 15 0 0 1-2.9 3.3M6.2 7.6C4.2 9.1 3 12 3 12s4 6 9 6a8.6 8.6 0 0 0 3.6-.8"></path></svg></span><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 32px; color: #CFC9BA; line-height: 1">3</span></div>
+            <h3 style="margin: 0; font-size: 20px; font-weight: 700">Chat and view</h3>
+            <p style="margin: 0; font-size: 15px; color: #3D4A43">Message the owner and book a free viewing. Phone numbers stay masked until you both sign.</p>
+          </li>
+          <li style="background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+            <div style="display: flex; justify-content: space-between; align-items: center"><span style="width: 48px; height: 48px; border-radius: 14px; background: #0E5A3C; display: grid; place-items: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg></span><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 32px; color: #CFC9BA; line-height: 1">4</span></div>
+            <h3 style="margin: 0; font-size: 20px; font-weight: 700">Sign and pay safely</h3>
+            <p style="margin: 0; font-size: 15px; color: #3D4A43">Sign the agreement and pay through Plainly Secure. The owner is paid after you confirm move-in.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- (d) Trust -->
+    <section aria-labelledby="h-trust" style="padding: 72px 0 0">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #0E5A3C">Trust and safety</span>
+          <h2 id="h-trust" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1; letter-spacing: -0.02em">Every badge says what we checked</h2>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: 16px">
+          <!-- Badge legend -->
+          <div style="background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+            <h3 style="margin: 0; font-size: 18px; font-weight: 700">Badge guide</h3>
+            <dl style="margin: 0; display: flex; flex-direction: column">
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 0">
+                <dt style="flex: 0 0 168px"><span style="height: 28px; padding: 0 10px; display: inline-flex; align-items: center; gap: 5px; border-radius: 999px; background: #E5EEFB; color: #164A90; font-size: 12px; font-weight: 700"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#164A90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>ID verified</span></dt>
+                <dd style="flex: 1 1 220px; margin: 0; font-size: 14px; color: #3D4A43">NIN and a live selfie were matched.</dd>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 0; border-top: 1px solid #E3DFD4">
+                <dt style="flex: 0 0 168px"><span style="height: 28px; padding: 0 10px; display: inline-flex; align-items: center; gap: 5px; border-radius: 999px; background: #E2F0E7; color: #0E5A3C; font-size: 12px; font-weight: 700"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"></path><path d="m8.5 12 2.5 2.5 4.5-5"></path></svg>Owner verified</span></dt>
+                <dd style="flex: 1 1 220px; margin: 0; font-size: 14px; color: #3D4A43">ID plus proof of control, such as a Land Use Charge demand. Plainly does not certify title.</dd>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 0; border-top: 1px solid #E3DFD4">
+                <dt style="flex: 0 0 168px"><span style="height: 28px; padding: 0 10px; display: inline-flex; align-items: center; gap: 5px; border-radius: 999px; background: #FDF3D3; color: #6B4E00; font-size: 12px; font-weight: 700"><span style="width: 8px; height: 8px; border-radius: 9px; background: #F4B728; box-shadow: 0 0 0 1px #6B4E00"></span>Inspected</span></dt>
+                <dd style="flex: 1 1 220px; margin: 0; font-size: 14px; color: #3D4A43">A Plainly inspector visited and checked the home against the listing.</dd>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 0 0; border-top: 1px solid #E3DFD4">
+                <dt style="flex: 0 0 168px; display: flex; flex-direction: column; align-items: flex-start; gap: 6px">
+                  <span style="height: 28px; padding: 0 10px; display: inline-flex; align-items: center; gap: 5px; border-radius: 999px; border: 1px solid #CFC9BA; background: #FFFFFF; color: #15201A; font-size: 12px; font-weight: 700"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15201A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"></path></svg>Listed by owner</span>
+                  <span style="height: 28px; padding: 0 10px; display: inline-flex; align-items: center; gap: 5px; border-radius: 999px; background: #EFECE4; color: #3D4A43; font-size: 12px; font-weight: 700"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3D4A43" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg>Listed by agent</span>
+                </dt>
+                <dd style="flex: 1 1 220px; margin: 0; font-size: 14px; color: #3D4A43">Owner listings carry no agency or legal fee. Agents must be LASRERA-registered and itemise their fee in the total.</dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- Never ask -->
+          <div style="background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 16px">
+            <h3 style="margin: 0; font-size: 18px; font-weight: 700">What Plainly will never ask you for</h3>
+            <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 10px">
+              <li style="display: flex; align-items: center; gap: 10px; padding: 14px; border-radius: 12px; background: #FCE8E6; color: #8C1D17; font-size: 15px; font-weight: 600"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B3261E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"></path></svg>Inspection fees</li>
+              <li style="display: flex; align-items: center; gap: 10px; padding: 14px; border-radius: 12px; background: #FCE8E6; color: #8C1D17; font-size: 15px; font-weight: 600"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B3261E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"></path></svg>Payment before viewing</li>
+              <li style="display: flex; align-items: center; gap: 10px; padding: 14px; border-radius: 12px; background: #FCE8E6; color: #8C1D17; font-size: 15px; font-weight: 600"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B3261E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"></path></svg>Payment outside Plainly</li>
+              <li style="display: flex; align-items: center; gap: 10px; padding: 14px; border-radius: 12px; background: #FCE8E6; color: #8C1D17; font-size: 15px; font-weight: 600"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B3261E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><circle cx="12" cy="12" r="9"></circle><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"></path></svg>Your OTP or PIN</li>
+            </ul>
+            <p style="margin: 0; font-size: 14px; color: #3D4A43">If anyone asks for these, stop and report it from the chat or the listing. Our team reviews every report.</p>
+            <div style="margin-top: auto; display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 12px; background: #E2F0E7; color: #0A4630; font-size: 14px; font-weight: 600"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"></path><path d="m8.5 12 2.5 2.5 4.5-5"></path></svg>Plainly can only protect money paid through Plainly.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- (e) Cost comparison -->
+    <section aria-labelledby="h-compare" style="padding: 72px 0 0">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 28px 48px">
+        <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #0E5A3C">What it costs to move in</span>
+          <h2 id="h-compare" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1; letter-spacing: -0.02em">Same flat. ₦410,000 to ₦450,000 less.</h2>
+          <p style="margin: 0; font-size: 16px; color: #3D4A43">Like for like: the same rent, the same one-year advance and the same caution deposit. The difference is the fees that disappear when you deal with the owner.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <span style="height: 28px; padding: 0 10px; display: inline-flex; align-items: center; border-radius: 6px; background: #FDF3D3; color: #6B4E00; font-size: 12px; font-weight: 700; letter-spacing: 0.04em">Worked example, ₦2m/yr flat</span>
+            <span style="height: 28px; padding: 0 10px; display: inline-flex; align-items: center; border-radius: 6px; background: #EFECE4; color: #3D4A43; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase">Illustration</span>
+          </div>
+        </div>
+        <div style="flex: 999 1 560px; min-width: 0; overflow-x: auto; background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 18px">
+          <table style="width: 100%; min-width: 560px; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums">
+            <caption style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Worked example, ₦2m/yr flat: typical agent route compared with Plainly</caption>
+            <thead>
+              <tr style="font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase">
+                <th scope="col" style="text-align: left; padding: 16px 20px; color: #5E6862; background: #FBFAF7; width: 38%">Cost</th>
+                <th scope="col" style="text-align: right; padding: 16px 20px; color: #5E6862; background: #FBFAF7">Typical agent route</th>
+                <th scope="col" style="text-align: right; padding: 16px 20px; color: #0E5A3C; background: #E2F0E7">Plainly</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-top: 1px solid #E3DFD4"><th scope="row" style="text-align: left; padding: 14px 20px; font-weight: 600">Agency fee</th><td style="text-align: right; padding: 14px 20px">10% · ₦200,000</td><td style="text-align: right; padding: 14px 20px; font-weight: 700; color: #145C37; background: #F3F9F5">₦0</td></tr>
+              <tr style="border-top: 1px solid #E3DFD4"><th scope="row" style="text-align: left; padding: 14px 20px; font-weight: 600">Legal / agreement fee</th><td style="text-align: right; padding: 14px 20px">10% · ₦200,000</td><td style="text-align: right; padding: 14px 20px; font-weight: 700; color: #145C37; background: #F3F9F5">₦0 <span style="font-weight: 500; color: #3D4A43">· free standard agreement</span></td></tr>
+              <tr style="border-top: 1px solid #E3DFD4"><th scope="row" style="text-align: left; padding: 14px 20px; font-weight: 600">Inspection / form fees</th><td style="text-align: right; padding: 14px 20px">₦10,000–₦50,000</td><td style="text-align: right; padding: 14px 20px; font-weight: 700; color: #145C37; background: #F3F9F5">₦0</td></tr>
+              <tr style="border-top: 1px solid #E3DFD4"><th scope="row" style="text-align: left; padding: 14px 20px; font-weight: 600">Rent, 1 year advance</th><td style="text-align: right; padding: 14px 20px">₦2,000,000</td><td style="text-align: right; padding: 14px 20px; background: #F3F9F5">₦2,000,000</td></tr>
+              <tr style="border-top: 1px solid #E3DFD4"><th scope="row" style="text-align: left; padding: 14px 20px; font-weight: 600">Caution deposit</th><td style="text-align: right; padding: 14px 20px">₦200,000</td><td style="text-align: right; padding: 14px 20px; background: #F3F9F5">₦200,000</td></tr>
+              <tr style="border-top: 1.5px solid #15201A"><th scope="row" style="text-align: left; padding: 18px 20px; font-weight: 700; font-size: 16px">Total to move in</th><td style="text-align: right; padding: 18px 20px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.02em">₦2.61m–₦2.65m</td><td style="text-align: right; padding: 18px 20px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 26px; letter-spacing: -0.02em; background: #F4B728; color: #15201A">₦2.2m</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- (f) Popular areas -->
+    <section aria-labelledby="h-areas" style="padding: 72px 0">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 0 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 8px 24px">
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #0E5A3C">Start somewhere</span>
+            <h2 id="h-areas" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.1; letter-spacing: -0.02em">Popular areas in Lagos</h2>
+          </div>
+          <a href="W02-Search.dc.html" style="min-height: 44px; display: flex; align-items: center; font-size: 15px; font-weight: 600; text-decoration: none">Browse all of Lagos</a>
+        </div>
+        <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 16px">
+          <li><a href="W02-Search.dc.html" style="display: flex; flex-direction: column; justify-content: flex-end; height: 180px; box-sizing: border-box; padding: 16px; border-radius: 18px; background: #C9D6CD; background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.18) 0 2px, transparent 2px 14px); color: #15201A; text-decoration: none; position: relative"><span style="position: absolute; top: 14px; right: 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #3D4A43">Mainland</span><span style="padding: 10px 12px; border-radius: 12px; background: #FFFFFF; display: flex; justify-content: space-between; align-items: baseline; gap: 8px"><strong style="font-size: 17px">Yaba</strong><span style="font-size: 14px; color: #3D4A43; font-variant-numeric: tabular-nums">142 homes</span></span></a></li>
+          <li><a href="W02-Search.dc.html" style="display: flex; flex-direction: column; justify-content: flex-end; height: 180px; box-sizing: border-box; padding: 16px; border-radius: 18px; background: #D6D2C2; background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.18) 0 2px, transparent 2px 14px); color: #15201A; text-decoration: none; position: relative"><span style="position: absolute; top: 14px; right: 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #3D4A43">Mainland</span><span style="padding: 10px 12px; border-radius: 12px; background: #FFFFFF; display: flex; justify-content: space-between; align-items: baseline; gap: 8px"><strong style="font-size: 17px">Gbagada</strong><span style="font-size: 14px; color: #3D4A43; font-variant-numeric: tabular-nums">88 homes</span></span></a></li>
+          <li><a href="W02-Search.dc.html" style="display: flex; flex-direction: column; justify-content: flex-end; height: 180px; box-sizing: border-box; padding: 16px; border-radius: 18px; background: #D3DAD6; background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.18) 0 2px, transparent 2px 14px); color: #15201A; text-decoration: none; position: relative"><span style="position: absolute; top: 14px; right: 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #3D4A43">Mainland</span><span style="padding: 10px 12px; border-radius: 12px; background: #FFFFFF; display: flex; justify-content: space-between; align-items: baseline; gap: 8px"><strong style="font-size: 17px">Surulere</strong><span style="font-size: 14px; color: #3D4A43; font-variant-numeric: tabular-nums">96 homes</span></span></a></li>
+          <li><a href="W02-Search.dc.html" style="display: flex; flex-direction: column; justify-content: flex-end; height: 180px; box-sizing: border-box; padding: 16px; border-radius: 18px; background: #CFE0E8; background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.18) 0 2px, transparent 2px 14px); color: #15201A; text-decoration: none; position: relative"><span style="position: absolute; top: 14px; right: 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #3D4A43">Island</span><span style="padding: 10px 12px; border-radius: 12px; background: #FFFFFF; display: flex; justify-content: space-between; align-items: baseline; gap: 8px"><strong style="font-size: 17px">Lekki Phase 1</strong><span style="font-size: 14px; color: #0E5A3C; font-weight: 600">Explore</span></span></a></li>
+          <li><a href="W02-Search.dc.html" style="display: flex; flex-direction: column; justify-content: flex-end; height: 180px; box-sizing: border-box; padding: 16px; border-radius: 18px; background: #E3DCC8; background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.18) 0 2px, transparent 2px 14px); color: #15201A; text-decoration: none; position: relative"><span style="position: absolute; top: 14px; right: 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #3D4A43">Mainland</span><span style="padding: 10px 12px; border-radius: 12px; background: #FFFFFF; display: flex; justify-content: space-between; align-items: baseline; gap: 8px"><strong style="font-size: 17px">Ikorodu</strong><span style="font-size: 14px; color: #0E5A3C; font-weight: 600">Explore</span></span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- (g) Owner band -->
+    <section aria-labelledby="h-owners" style="background: #0E5A3C; color: #FFFFFF">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 64px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 32px 56px">
+        <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #CDE6D6">For owners</span>
+          <h2 id="h-owners" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4vw, 48px); line-height: 1.05; letter-spacing: -0.03em">Own a flat? List it plainly.</h2>
+          <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 14px 24px; font-size: 16px">
+            <li style="display: flex; align-items: flex-start; gap: 12px"><span style="width: 28px; height: 28px; flex: none; border-radius: 999px; background: #F4B728; display: grid; place-items: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15201A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></span><span><strong>Tenant ID checks</strong> before anyone books a viewing.</span></li>
+            <li style="display: flex; align-items: flex-start; gap: 12px"><span style="width: 28px; height: 28px; flex: none; border-radius: 999px; background: #F4B728; display: grid; place-items: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15201A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></span><span><strong>You approve every tenant.</strong> Nobody moves in without your yes.</span></li>
+            <li style="display: flex; align-items: flex-start; gap: 12px"><span style="width: 28px; height: 28px; flex: none; border-radius: 999px; background: #F4B728; display: grid; place-items: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15201A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></span><span><strong>Guaranteed payment</strong> through Plainly Secure, straight to your bank.</span></li>
+            <li style="display: flex; align-items: flex-start; gap: 12px"><span style="width: 28px; height: 28px; flex: none; border-radius: 999px; background: #F4B728; display: grid; place-items: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#15201A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg></span><span><strong>Fee shown before you start:</strong> ₦5,000–₦35,000 per 90 days by rent band. Founding owners list free first.</span></li>
+          </ul>
+          <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; padding-top: 4px">
+            <a href="W10-CreateListing.dc.html" style="height: 52px; padding: 0 24px; box-sizing: border-box; display: flex; align-items: center; gap: 8px; border-radius: 12px; background: #FFFFFF; color: #0E5A3C; text-decoration: none; font-size: 16px; font-weight: 700"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>List your property</a>
+            <a href="W04-OwnerDash.dc.html" style="min-height: 44px; display: flex; align-items: center; color: #FFFFFF; font-size: 15px; font-weight: 600; text-underline-offset: 3px">How owner fees work</a>
+          </div>
+        </div>
+        <!-- Fee bands card -->
+        <div style="flex: 1 1 320px; min-width: 0; background: #0A4630; border: 1px solid #1C6B4B; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 14px">
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px">
+            <h3 style="margin: 0; font-size: 18px; font-weight: 700">Listing fee per 90 days</h3>
+            <span style="height: 26px; padding: 0 9px; display: inline-flex; align-items: center; border-radius: 999px; background: #F4B728; color: #15201A; font-size: 12px; font-weight: 700">Founding: first 90 days free</span>
+          </div>
+          <dl style="margin: 0; display: flex; flex-direction: column; font-size: 15px; font-variant-numeric: tabular-nums">
+            <div style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 0"><dt style="color: #CDE6D6">Rent under ₦1m</dt><dd style="margin: 0; font-weight: 700">₦5,000</dd></div>
+            <div style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid #1C6B4B"><dt style="color: #CDE6D6">₦1m–₦3m</dt><dd style="margin: 0; font-weight: 700">₦10,000</dd></div>
+            <div style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid #1C6B4B"><dt style="color: #CDE6D6">₦3m–₦10m</dt><dd style="margin: 0; font-weight: 700">₦20,000</dd></div>
+            <div style="display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid #1C6B4B"><dt style="color: #CDE6D6">Over ₦10m</dt><dd style="margin: 0; font-weight: 700">₦35,000</dd></div>
+          </dl>
+          <span style="font-size: 13px; color: #CDE6D6">A closing fee applies only when you let through Plainly, and your listing fee is credited against it.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- (h) App download band -->
+    <section aria-labelledby="h-app" style="padding: 56px 0">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 0 32px; box-sizing: border-box">
+        <div style="background: #FFFFFF; border: 1px solid #E3DFD4; border-radius: 24px; padding: 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 40px">
+          <div style="display: flex; align-items: center; gap: 20px; flex: 1 1 360px; min-width: 0">
+            <span style="width: 64px; height: 64px; flex: none; border-radius: 18px; background: #E2F0E7; display: grid; place-items: center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0E5A3C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"></rect><path d="M11 18h2"></path></svg></span>
+            <div style="display: flex; flex-direction: column; gap: 4px">
+              <h2 id="h-app" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 28px; line-height: 1.15; letter-spacing: -0.02em">Get the app. Built for patchy data.</h2>
+              <span style="font-size: 15px; color: #3D4A43">Data saver on 2G and 3G, offline drafts, and alerts when a home you saved changes.</span>
+            </div>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px">
+            <button type="button" style="height: 52px; padding: 0 20px; display: flex; align-items: center; gap: 10px; border: 1.5px solid #15201A; border-radius: 12px; background: #FFFFFF; color: #15201A; font: 700 15px 'Figtree', sans-serif"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#15201A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>Get it on Google Play</button>
+            <button type="button" style="height: 52px; padding: 0 20px; display: flex; align-items: center; gap: 10px; border: 1.5px solid #15201A; border-radius: 12px; background: #FFFFFF; color: #15201A; font: 700 15px 'Figtree', sans-serif"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#15201A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>Download on the App Store</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer style="background: #FFFFFF; border-top: 1px solid #E3DFD4">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 28px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+        <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#0E5A3C"></rect><path d="M10 25V13.5a6 6 0 0 1 12 0V25z" fill="#F4B728"></path><circle cx="19" cy="19.5" r="1.3" fill="#0E5A3C"></circle></svg>
+        <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 20px; letter-spacing: -0.03em">plainly</span>
+        <span style="font-size: 14px; color: #5E6862">Plainly. Straight to the owner.</span>
+      </div>
+      <nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 14px; font-weight: 600">
+        <a href="A06-SafetyCentre.dc.html" style="min-height: 44px; display: flex; align-items: center; text-decoration: none; color: #3D4A43">Safety centre</a>
+        <a href="W01-Home.dc.html" style="min-height: 44px; display: flex; align-items: center; text-decoration: none; color: #3D4A43">How fees work</a>
+        <a href="W10-CreateListing.dc.html" style="min-height: 44px; display: flex; align-items: center; text-decoration: none; color: #3D4A43">For owners</a>
+        <a href="W01-Home.dc.html" style="min-height: 44px; display: flex; align-items: center; text-decoration: none; color: #3D4A43">Agents</a>
+        <a href="W01-Home.dc.html" style="min-height: 44px; display: flex; align-items: center; text-decoration: none; color: #3D4A43">Legal</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":3686}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

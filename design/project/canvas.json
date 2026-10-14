@@ -1,0 +1,1199 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-13T10:45:00Z"
+ },
+ "title": "Plainly — UI/UX Design v1.3 (Mobile app + Web app)",
+ "launch": {
+  "view": "canvas",
+  "page": "start"
+ },
+ "pages": [
+  {
+   "id": "start",
+   "name": "00 · START HERE — screen index"
+  },
+  {
+   "id": "foundations",
+   "name": "01 · DESIGN SYSTEM — foundations (shared)"
+  },
+  {
+   "id": "onboarding",
+   "name": "MOBILE APP · 01 — Onboarding & account"
+  },
+  {
+   "id": "discover",
+   "name": "MOBILE APP · 02 — Tenant/buyer: discover"
+  },
+  {
+   "id": "contact",
+   "name": "MOBILE APP · 03 — Tenant/buyer: contact & viewings"
+  },
+  {
+   "id": "deal",
+   "name": "MOBILE APP · 04 — Tenant/buyer: apply, sign & pay"
+  },
+  {
+   "id": "tenancy",
+   "name": "MOBILE APP · 05 — Tenant/buyer: after move-in"
+  },
+  {
+   "id": "listing",
+   "name": "MOBILE APP · 06 — Owner: create listing"
+  },
+  {
+   "id": "manage",
+   "name": "MOBILE APP · 07 — Owner: manage & get paid"
+  },
+  {
+   "id": "phase2",
+   "name": "MOBILE APP · 08 — Agents & land (Phase 2)"
+  },
+  {
+   "id": "webpublic",
+   "name": "WEB APP · 01 — Landing & public site"
+  },
+  {
+   "id": "webwork",
+   "name": "WEB APP · 02 — Signed-in workspace"
+  },
+  {
+   "id": "webdev",
+   "name": "WEB APP · 03 — Developer tools (Phase 2)"
+  },
+  {
+   "id": "admin",
+   "name": "WEB APP · 04 — Admin back office (staff)"
+  }
+ ],
+ "boards": {
+  "Index.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 3320,
+   "title": "START · Screen index & sitemap",
+   "page": "start"
+  },
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 4730,
+   "title": "FND-01 · Brand & foundations",
+   "page": "foundations"
+  },
+  "Components.dc.html": {
+   "x": 1520,
+   "y": 0,
+   "w": 1440,
+   "h": 3090,
+   "title": "FND-02 · Components & patterns",
+   "page": "foundations"
+  },
+  "Trust.dc.html": {
+   "x": 3040,
+   "y": 0,
+   "w": 1440,
+   "h": 2530,
+   "title": "FND-03 · Trust, status & money system",
+   "page": "foundations"
+  },
+  "A01-Splash.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 930,
+   "title": "Mobile · ONB-01 · Welcome (START)",
+   "page": "onboarding",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "A02-Phone.dc.html": {
+   "x": 470,
+   "y": 0,
+   "w": 390,
+   "h": 940,
+   "title": "Mobile · ONB-02 · Enter phone number",
+   "page": "onboarding",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "S01-Welcome.dc.html": {
+   "x": 940,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Mobile · ONB-03 · Verify OTP",
+   "page": "onboarding",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "A03-Role.dc.html": {
+   "x": 1410,
+   "y": 0,
+   "w": 390,
+   "h": 1020,
+   "title": "Mobile · ONB-04 · Choose roles",
+   "page": "onboarding",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "S02-Verify.dc.html": {
+   "x": 1880,
+   "y": 0,
+   "w": 390,
+   "h": 880,
+   "title": "Mobile · ONB-05 · ID verification (NIN + liveness)",
+   "page": "onboarding",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "A04-Profile.dc.html": {
+   "x": 2350,
+   "y": 0,
+   "w": 390,
+   "h": 1852,
+   "title": "Mobile · ACC-01 · Profile & settings",
+   "page": "onboarding",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "A05-Notifications.dc.html": {
+   "x": 2820,
+   "y": 0,
+   "w": 390,
+   "h": 1790,
+   "title": "Mobile · ACC-02 · Notifications & alerts",
+   "page": "onboarding",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "O08-Security.dc.html": {
+   "x": 3290,
+   "y": 0,
+   "w": 390,
+   "h": 936,
+   "title": "Mobile · ACC-03 · Security centre",
+   "page": "onboarding",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "M06-PayoutAccount.dc.html": {
+   "x": 3760,
+   "y": 0,
+   "w": 390,
+   "h": 1040,
+   "title": "Mobile · ACC-04 · Add / change payout account",
+   "page": "onboarding",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "O07-Strikes.dc.html": {
+   "x": 4230,
+   "y": 0,
+   "w": 390,
+   "h": 891,
+   "title": "Mobile · ACC-05 · Account standing (strikes)",
+   "page": "onboarding",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "A06-SafetyCentre.dc.html": {
+   "x": 4700,
+   "y": 0,
+   "w": 390,
+   "h": 2060,
+   "title": "Mobile · ACC-06 · Safety centre",
+   "page": "onboarding",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "A07-Report.dc.html": {
+   "x": 5170,
+   "y": 0,
+   "w": 390,
+   "h": 1220,
+   "title": "Mobile · ACC-07 · Report listing / user",
+   "page": "onboarding",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "S03-Home.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 990,
+   "title": "Mobile · DSC-01 · Home (START)",
+   "page": "discover",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "S04-Results.dc.html": {
+   "x": 470,
+   "y": 0,
+   "w": 390,
+   "h": 990,
+   "title": "Mobile · DSC-02 · Search results",
+   "page": "discover",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "S05-Filters.dc.html": {
+   "x": 940,
+   "y": 0,
+   "w": 390,
+   "h": 864,
+   "title": "Mobile · DSC-03 · Filters",
+   "page": "discover",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "S06-Map.dc.html": {
+   "x": 1410,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Mobile · DSC-04 · Map search",
+   "page": "discover",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "S07-Listing.dc.html": {
+   "x": 1880,
+   "y": 0,
+   "w": 390,
+   "h": 2110,
+   "title": "Mobile · DSC-05 · Listing detail",
+   "page": "discover",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "S08-Cost.dc.html": {
+   "x": 2350,
+   "y": 0,
+   "w": 390,
+   "h": 944,
+   "title": "Mobile · DSC-06 · Total move-in cost",
+   "page": "discover",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "D03-BadgeGuide.dc.html": {
+   "x": 2820,
+   "y": 0,
+   "w": 390,
+   "h": 2480,
+   "title": "Mobile · DSC-07 · Badge & label guide",
+   "page": "discover",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "D01-Saved.dc.html": {
+   "x": 3290,
+   "y": 0,
+   "w": 390,
+   "h": 1386,
+   "title": "Mobile · DSC-08 · Saved homes & searches",
+   "page": "discover",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "D02-Compare.dc.html": {
+   "x": 3760,
+   "y": 0,
+   "w": 390,
+   "h": 1320,
+   "title": "Mobile · DSC-09 · Compare homes",
+   "page": "discover",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "V03-Messages.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 880,
+   "title": "Mobile · CTV-01 · Messages inbox",
+   "page": "contact",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "S09-Chat.dc.html": {
+   "x": 470,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Mobile · CTV-02 · Chat (masked & redacted)",
+   "page": "contact",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "V04-MaskedCall.dc.html": {
+   "x": 940,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Mobile · CTV-03 · Masked in-app call",
+   "page": "contact",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "S10-Viewing.dc.html": {
+   "x": 1410,
+   "y": 0,
+   "w": 390,
+   "h": 925,
+   "title": "Mobile · CTV-04 · Book a viewing",
+   "page": "contact",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "V01-MyViewings.dc.html": {
+   "x": 1880,
+   "y": 0,
+   "w": 390,
+   "h": 1496,
+   "title": "Mobile · CTV-05 · My viewings",
+   "page": "contact",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "V02-ViewingDay.dc.html": {
+   "x": 2350,
+   "y": 0,
+   "w": 390,
+   "h": 1620,
+   "title": "Mobile · CTV-06 · Viewing day & check-in",
+   "page": "contact",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "S11-Apply.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 994,
+   "title": "Mobile · DEAL-01 · Apply",
+   "page": "deal",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "S12-DealRoom.dc.html": {
+   "x": 470,
+   "y": 0,
+   "w": 390,
+   "h": 1170,
+   "title": "Mobile · DEAL-02 · Deal room",
+   "page": "deal",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "P01-Agreement.dc.html": {
+   "x": 940,
+   "y": 0,
+   "w": 390,
+   "h": 2135,
+   "title": "Mobile · DEAL-03 · Review & sign agreement",
+   "page": "deal",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "S13-Checkout.dc.html": {
+   "x": 1410,
+   "y": 0,
+   "w": 390,
+   "h": 907,
+   "title": "Mobile · DEAL-04 · Plainly Secure checkout",
+   "page": "deal",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "P02-Paid.dc.html": {
+   "x": 1880,
+   "y": 0,
+   "w": 390,
+   "h": 1399,
+   "title": "Mobile · DEAL-05 · Payment received & receipt",
+   "page": "deal",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "P03-MoveIn.dc.html": {
+   "x": 2350,
+   "y": 0,
+   "w": 390,
+   "h": 1150,
+   "title": "Mobile · DEAL-06 · Confirm move-in",
+   "page": "deal",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "P04-Dispute.dc.html": {
+   "x": 2820,
+   "y": 0,
+   "w": 390,
+   "h": 1492,
+   "title": "Mobile · DEAL-07 · Raise a dispute",
+   "page": "deal",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "S14-Outcome.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 910,
+   "title": "Mobile · TEN-01 · Rate & outcome check",
+   "page": "tenancy",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "P05-Tenancy.dc.html": {
+   "x": 470,
+   "y": 0,
+   "w": 390,
+   "h": 1605,
+   "title": "Mobile · TEN-02 · My tenancy (Phase 2)",
+   "page": "tenancy",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "L01-ListStart.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 1564,
+   "title": "Mobile · LST-01 · Type & fee estimate (START)",
+   "page": "listing",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "L02-Location.dc.html": {
+   "x": 470,
+   "y": 0,
+   "w": 390,
+   "h": 1400,
+   "title": "Mobile · LST-02 · Location & map pin",
+   "page": "listing",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "L03-Specs.dc.html": {
+   "x": 940,
+   "y": 0,
+   "w": 390,
+   "h": 1600,
+   "title": "Mobile · LST-03 · Specs & amenities",
+   "page": "listing",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "O02-ListTerms.dc.html": {
+   "x": 1410,
+   "y": 0,
+   "w": 390,
+   "h": 904,
+   "title": "Mobile · LST-04 · Terms & costs",
+   "page": "listing",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "L04-Media.dc.html": {
+   "x": 1880,
+   "y": 0,
+   "w": 390,
+   "h": 1400,
+   "title": "Mobile · LST-05 · Photos & video",
+   "page": "listing",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "O03-Capture.dc.html": {
+   "x": 2350,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Mobile · LST-06 · Live video capture",
+   "page": "listing",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "L05-Ownership.dc.html": {
+   "x": 2820,
+   "y": 0,
+   "w": 390,
+   "h": 1620,
+   "title": "Mobile · LST-07 · Prove ownership / authority",
+   "page": "listing",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "L06-Review.dc.html": {
+   "x": 3290,
+   "y": 0,
+   "w": 390,
+   "h": 1620,
+   "title": "Mobile · LST-08 · Review & submit",
+   "page": "listing",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "O04-FeeCheckout.dc.html": {
+   "x": 3760,
+   "y": 0,
+   "w": 390,
+   "h": 891,
+   "title": "Mobile · LST-09 · Listing fee checkout (payment failed state)",
+   "page": "listing",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "O01-OwnerHome.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 1300,
+   "title": "Mobile · OWN-01 · My listings (START)",
+   "page": "manage",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "L07-ListingManager.dc.html": {
+   "x": 470,
+   "y": 0,
+   "w": 390,
+   "h": 1926,
+   "title": "Mobile · OWN-02 · Listing manager (Live)",
+   "page": "manage",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "L08-ListingIssues.dc.html": {
+   "x": 940,
+   "y": 0,
+   "w": 390,
+   "h": 1790,
+   "title": "Mobile · OWN-03 · Rejected / expired / suspended",
+   "page": "manage",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "M01-Enquiries.dc.html": {
+   "x": 1410,
+   "y": 0,
+   "w": 390,
+   "h": 1360,
+   "title": "Mobile · OWN-04 · Enquiries inbox",
+   "page": "manage",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "M02-Applications.dc.html": {
+   "x": 1880,
+   "y": 0,
+   "w": 390,
+   "h": 1906,
+   "title": "Mobile · OWN-05 · Applications & accept",
+   "page": "manage",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "M03-Slots.dc.html": {
+   "x": 2350,
+   "y": 0,
+   "w": 390,
+   "h": 1420,
+   "title": "Mobile · OWN-06 · Viewing slots & requests",
+   "page": "manage",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "M04-OwnerDeal.dc.html": {
+   "x": 2820,
+   "y": 0,
+   "w": 390,
+   "h": 1460,
+   "title": "Mobile · OWN-07 · Owner deal room (handover)",
+   "page": "manage",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "O06-Payout.dc.html": {
+   "x": 3290,
+   "y": 0,
+   "w": 390,
+   "h": 844,
+   "title": "Mobile · OWN-08 · Payout statement",
+   "page": "manage",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "O05-CloseOut.dc.html": {
+   "x": 3760,
+   "y": 0,
+   "w": 390,
+   "h": 965,
+   "title": "Mobile · OWN-09 · Close-out declaration",
+   "page": "manage",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "M05-Boost.dc.html": {
+   "x": 4230,
+   "y": 0,
+   "w": 390,
+   "h": 1400,
+   "title": "Mobile · OWN-10 · Boost & Verified Plus",
+   "page": "manage",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "X01-AgentOnboard.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 1849,
+   "title": "Mobile · P2-01 · Agent verification & mandate",
+   "page": "phase2",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "X02-LandListing.dc.html": {
+   "x": 470,
+   "y": 0,
+   "w": 390,
+   "h": 2724,
+   "title": "Mobile · P2-02 · Land listing detail",
+   "page": "phase2",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "X03-IntroAck.dc.html": {
+   "x": 940,
+   "y": 0,
+   "w": 390,
+   "h": 1720,
+   "title": "Mobile · P2-03 · Introduction Acknowledgment & viewer",
+   "page": "phase2",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "X04-TitleCheck.dc.html": {
+   "x": 1410,
+   "y": 0,
+   "w": 390,
+   "h": 1960,
+   "title": "Mobile · P2-04 · Title Check & land deal room",
+   "page": "phase2",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "X05-Enhanced.dc.html": {
+   "x": 1880,
+   "y": 0,
+   "w": 390,
+   "h": 1420,
+   "title": "Mobile · P2-05 · Enhanced checks (2E)",
+   "page": "phase2",
+   "radius": 32,
+   "is_interactive": true
+  },
+  "X06-DevProject.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 2475,
+   "title": "Web · P2-06 · Developer project & lead pipeline (web)",
+   "page": "webdev",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W01-Home.dc.html": {
+   "x": 3040,
+   "y": 0,
+   "w": 1440,
+   "h": 3686,
+   "title": "Web · WEB-02 · Browse & search home (guest)",
+   "page": "webpublic",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W02-Search.dc.html": {
+   "x": 4560,
+   "y": 0,
+   "w": 1440,
+   "h": 1434,
+   "title": "Web · WEB-03 · Results + map",
+   "page": "webpublic",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W03-Listing.dc.html": {
+   "x": 6080,
+   "y": 0,
+   "w": 1440,
+   "h": 3241,
+   "title": "Web · WEB-04 · Listing detail",
+   "page": "webpublic",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W08-SignIn.dc.html": {
+   "x": 7600,
+   "y": 0,
+   "w": 1440,
+   "h": 1440,
+   "title": "Web · WEB-05 · Log in",
+   "page": "webpublic",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W11-Account.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 1570,
+   "title": "Web · WKS-01 · Seeker account",
+   "page": "webwork",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W09-Messages.dc.html": {
+   "x": 1520,
+   "y": 0,
+   "w": 1440,
+   "h": 1197,
+   "title": "Web · WKS-02 · Messages",
+   "page": "webwork",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W04-OwnerDash.dc.html": {
+   "x": 3040,
+   "y": 0,
+   "w": 1440,
+   "h": 2194,
+   "title": "Web · WKS-03 · Owner overview (START)",
+   "page": "webwork",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W10-CreateListing.dc.html": {
+   "x": 4560,
+   "y": 0,
+   "w": 1440,
+   "h": 1390,
+   "title": "Web · WKS-04 · Create listing wizard",
+   "page": "webwork",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W05-DealRoom.dc.html": {
+   "x": 6080,
+   "y": 0,
+   "w": 1440,
+   "h": 1743,
+   "title": "Web · WKS-05 · Deal room & Plainly Secure",
+   "page": "webwork",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W06-Billing.dc.html": {
+   "x": 7600,
+   "y": 0,
+   "w": 1440,
+   "h": 2417,
+   "title": "Web · WKS-06 · Invoices, credits & plans",
+   "page": "webwork",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W12-AdminVerify.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 2657,
+   "title": "Web · ADM-01 · Verification queue (START)",
+   "page": "admin",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W16-AdminModeration.dc.html": {
+   "x": 1520,
+   "y": 0,
+   "w": 1440,
+   "h": 1850,
+   "title": "Web · ADM-02 · Listing moderation",
+   "page": "admin",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W13-AdminDisputes.dc.html": {
+   "x": 3040,
+   "y": 0,
+   "w": 1440,
+   "h": 2086,
+   "title": "Web · ADM-03 · Disputes & escrow",
+   "page": "admin",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W07-Admin.dc.html": {
+   "x": 4560,
+   "y": 0,
+   "w": 1440,
+   "h": 1918,
+   "title": "Web · ADM-04 · Leakage investigation",
+   "page": "admin",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W14-AdminRevenue.dc.html": {
+   "x": 6080,
+   "y": 0,
+   "w": 1440,
+   "h": 1741,
+   "title": "Web · ADM-05 · KPI & revenue dashboard",
+   "page": "admin",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W15-AdminConfig.dc.html": {
+   "x": 7600,
+   "y": 0,
+   "w": 1440,
+   "h": 1832,
+   "title": "Web · ADM-06 · Configuration (two-person approval)",
+   "page": "admin",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W00-Landing.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 5610,
+   "title": "Web · WEB-00 · Landing page — first page for every user (START)",
+   "page": "webpublic",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "W17-Join.dc.html": {
+   "x": 1520,
+   "y": 0,
+   "w": 1440,
+   "h": 1000,
+   "title": "Web · WEB-01 · Join: choose tenant/buyer or owner + OTP",
+   "page": "webpublic",
+   "expand": "fill",
+   "is_interactive": true
+  }
+ },
+ "order": [
+  "Index.dc.html",
+  "Main.dc.html",
+  "Components.dc.html",
+  "Trust.dc.html",
+  "A01-Splash.dc.html",
+  "A02-Phone.dc.html",
+  "S01-Welcome.dc.html",
+  "A03-Role.dc.html",
+  "S02-Verify.dc.html",
+  "A04-Profile.dc.html",
+  "A05-Notifications.dc.html",
+  "O08-Security.dc.html",
+  "M06-PayoutAccount.dc.html",
+  "O07-Strikes.dc.html",
+  "A06-SafetyCentre.dc.html",
+  "A07-Report.dc.html",
+  "S03-Home.dc.html",
+  "S04-Results.dc.html",
+  "S05-Filters.dc.html",
+  "S06-Map.dc.html",
+  "S07-Listing.dc.html",
+  "S08-Cost.dc.html",
+  "D03-BadgeGuide.dc.html",
+  "D01-Saved.dc.html",
+  "D02-Compare.dc.html",
+  "V03-Messages.dc.html",
+  "S09-Chat.dc.html",
+  "V04-MaskedCall.dc.html",
+  "S10-Viewing.dc.html",
+  "V01-MyViewings.dc.html",
+  "V02-ViewingDay.dc.html",
+  "S11-Apply.dc.html",
+  "S12-DealRoom.dc.html",
+  "P01-Agreement.dc.html",
+  "S13-Checkout.dc.html",
+  "P02-Paid.dc.html",
+  "P03-MoveIn.dc.html",
+  "P04-Dispute.dc.html",
+  "S14-Outcome.dc.html",
+  "P05-Tenancy.dc.html",
+  "L01-ListStart.dc.html",
+  "L02-Location.dc.html",
+  "L03-Specs.dc.html",
+  "O02-ListTerms.dc.html",
+  "L04-Media.dc.html",
+  "O03-Capture.dc.html",
+  "L05-Ownership.dc.html",
+  "L06-Review.dc.html",
+  "O04-FeeCheckout.dc.html",
+  "O01-OwnerHome.dc.html",
+  "L07-ListingManager.dc.html",
+  "L08-ListingIssues.dc.html",
+  "M01-Enquiries.dc.html",
+  "M02-Applications.dc.html",
+  "M03-Slots.dc.html",
+  "M04-OwnerDeal.dc.html",
+  "O06-Payout.dc.html",
+  "O05-CloseOut.dc.html",
+  "M05-Boost.dc.html",
+  "X01-AgentOnboard.dc.html",
+  "X02-LandListing.dc.html",
+  "X03-IntroAck.dc.html",
+  "X04-TitleCheck.dc.html",
+  "X05-Enhanced.dc.html",
+  "X06-DevProject.dc.html",
+  "W00-Landing.dc.html",
+  "W17-Join.dc.html",
+  "W01-Home.dc.html",
+  "W02-Search.dc.html",
+  "W03-Listing.dc.html",
+  "W08-SignIn.dc.html",
+  "W11-Account.dc.html",
+  "W09-Messages.dc.html",
+  "W04-OwnerDash.dc.html",
+  "W10-CreateListing.dc.html",
+  "W05-DealRoom.dc.html",
+  "W06-Billing.dc.html",
+  "W12-AdminVerify.dc.html",
+  "W16-AdminModeration.dc.html",
+  "W13-AdminDisputes.dc.html",
+  "W07-Admin.dc.html",
+  "W14-AdminRevenue.dc.html",
+  "W15-AdminConfig.dc.html"
+ ],
+ "notes": {
+  "t_start": {
+   "x": 0,
+   "y": -300,
+   "text": "00 · START HERE — screen index",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "start"
+  },
+  "t_foundations": {
+   "x": 0,
+   "y": -300,
+   "text": "01 · DESIGN SYSTEM — foundations (shared)",
+   "kind": "title1",
+   "maxW": 4480,
+   "page": "foundations"
+  },
+  "t_onboarding": {
+   "x": 0,
+   "y": -300,
+   "text": "MOBILE APP · 01 — Onboarding & account",
+   "kind": "title1",
+   "maxW": 5560,
+   "page": "onboarding"
+  },
+  "p_onboarding": {
+   "x": -520,
+   "y": 0,
+   "w": 420,
+   "text": "How to use this page\n\nPlay from ONB-01 Welcome: phone → OTP → roles → ID check → continues into chat. ACC screens open from Profile (any seeker tab bar).",
+   "fill": "green",
+   "page": "onboarding"
+  },
+  "t_discover": {
+   "x": 0,
+   "y": -300,
+   "text": "MOBILE APP · 02 — Tenant/buyer: discover",
+   "kind": "title1",
+   "maxW": 4150,
+   "page": "discover"
+  },
+  "p_discover": {
+   "x": -520,
+   "y": 0,
+   "w": 420,
+   "text": "How to use this page\n\nPlay from DSC-01 Home. Search → results → filters / map → listing → cost breakdown, badge guide. Saved tab → saved & compare.",
+   "fill": "green",
+   "page": "discover"
+  },
+  "t_contact": {
+   "x": 0,
+   "y": -300,
+   "text": "MOBILE APP · 03 — Tenant/buyer: contact & viewings",
+   "kind": "title1",
+   "maxW": 2740,
+   "page": "contact"
+  },
+  "p_contact": {
+   "x": -520,
+   "y": 0,
+   "w": 420,
+   "text": "How to use this page\n\nMessages tab → inbox → chat → masked call. Book viewing → My viewings → viewing day check-in → apply.",
+   "fill": "green",
+   "page": "contact"
+  },
+  "t_deal": {
+   "x": 0,
+   "y": -300,
+   "text": "MOBILE APP · 04 — Tenant/buyer: apply, sign & pay",
+   "kind": "title1",
+   "maxW": 3210,
+   "page": "deal"
+  },
+  "p_deal": {
+   "x": -520,
+   "y": 0,
+   "w": 420,
+   "text": "How to use this page\n\nApply → deal room → sign agreement → checkout → payment received → confirm move-in (or raise a dispute) → outcome.",
+   "fill": "green",
+   "page": "deal"
+  },
+  "t_tenancy": {
+   "x": 0,
+   "y": -300,
+   "text": "MOBILE APP · 05 — Tenant/buyer: after move-in",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "tenancy"
+  },
+  "p_tenancy": {
+   "x": -520,
+   "y": 0,
+   "w": 420,
+   "text": "How to use this page\n\nOutcome check and tenancy registration; tenancy record, rent reminders and renewals (Phase 2).",
+   "fill": "green",
+   "page": "tenancy"
+  },
+  "t_listing": {
+   "x": 0,
+   "y": -300,
+   "text": "MOBILE APP · 06 — Owner: create listing",
+   "kind": "title1",
+   "maxW": 4150,
+   "page": "listing"
+  },
+  "p_listing": {
+   "x": -520,
+   "y": 0,
+   "w": 420,
+   "text": "How to use this page\n\n9-step wizard. Play from LST-01: type & fee estimate → location → specs → terms → media → live capture → ownership → review → fee checkout.",
+   "fill": "green",
+   "page": "listing"
+  },
+  "t_manage": {
+   "x": 0,
+   "y": -300,
+   "text": "MOBILE APP · 07 — Owner: manage & get paid",
+   "kind": "title1",
+   "maxW": 4620,
+   "page": "manage"
+  },
+  "p_manage": {
+   "x": -520,
+   "y": 0,
+   "w": 420,
+   "text": "How to use this page\n\nPlay from OWN-01. Tap rows: Live → manager, Under offer → deal room, Paused → close-out, Let → payout. Tabs: enquiries, viewing slots, payouts.",
+   "fill": "green",
+   "page": "manage"
+  },
+  "t_phase2": {
+   "x": 0,
+   "y": -300,
+   "text": "MOBILE APP · 08 — Agents & land (Phase 2)",
+   "kind": "title1",
+   "maxW": 2310,
+   "page": "phase2"
+  },
+  "p_phase2": {
+   "x": -520,
+   "y": 0,
+   "w": 420,
+   "text": "How to use this page\n\nMobile Phase 2 flows. Land: listing → Introduction Acknowledgment → Title Check → Enhanced checks. Agent verification stands alone. The developer workspace is on WEB APP · 03.",
+   "fill": "green",
+   "page": "phase2"
+  },
+  "t_webpublic": {
+   "x": 0,
+   "y": -300,
+   "text": "WEB APP · 01 — Landing & public site",
+   "kind": "title1",
+   "maxW": 9040,
+   "page": "webpublic"
+  },
+  "p_webpublic": {
+   "x": -520,
+   "y": 0,
+   "w": 420,
+   "text": "How to use this page\n\nPress Play on WEB-00 Landing: the first page every user sees. Pick 'I'm looking for a home' or 'I own property' → Join (choose role, phone, OTP) → seeker account or owner listing wizard. 'Log in' goes to WEB-05; 'Browse first' goes to the guest search. Pages are responsive: open full window and resize to phone width.",
+   "fill": "green",
+   "page": "webpublic"
+  },
+  "t_webwork": {
+   "x": 0,
+   "y": -300,
+   "text": "WEB APP · 02 — Signed-in workspace",
+   "kind": "title1",
+   "maxW": 9040,
+   "page": "webwork"
+  },
+  "p_webwork": {
+   "x": -520,
+   "y": 0,
+   "w": 420,
+   "text": "How to use this page\n\nSide nav moves between pages; role pill switches Seeker ⇄ Owner.",
+   "fill": "green",
+   "page": "webwork"
+  },
+  "t_admin": {
+   "x": 0,
+   "y": -300,
+   "text": "WEB APP · 04 — Admin back office (staff)",
+   "kind": "title1",
+   "maxW": 9040,
+   "page": "admin"
+  },
+  "p_admin": {
+   "x": -520,
+   "y": 0,
+   "w": 420,
+   "text": "How to use this page\n\nStaff back office. Side nav links every queue. PII masked by default; four-eyes on high-risk actions.",
+   "fill": "green",
+   "page": "admin"
+  },
+  "p_foundations": {
+   "x": -520,
+   "y": 0,
+   "w": 420,
+   "text": "Developer handoff\n\nTokens, type, components and trust/status rules. Build colours, radii and spacing as named theme tokens first. Requirement IDs refer to FRD/PRD v1.1.",
+   "fill": "teal",
+   "page": "foundations"
+  },
+  "t_webdev": {
+   "x": 0,
+   "y": -300,
+   "text": "WEB APP · 03 — Developer tools (Phase 2)",
+   "kind": "title1",
+   "maxW": 1440,
+   "page": "webdev"
+  },
+  "p_webdev": {
+   "x": -520,
+   "y": 0,
+   "w": 420,
+   "text": "How to use this page\n\nDeveloper / estate-manager workspace (web only): project page, unit list, bulk upload, lead pipeline and team seats. Phase 2.",
+   "fill": "green",
+   "page": "webdev"
+  }
+ },
+ "designSystems": [],
+ "attachments": {}
+}

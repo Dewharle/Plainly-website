@@ -1,0 +1,21 @@
+{
+  "W00-Landing": "Plainly · Rent and buy straight from the owner",
+  "W17-Join": "Plainly · Create your account",
+  "W01-Home": "Plainly · Home and search (web)",
+  "W02-Search": "Plainly · Search results and map (web)",
+  "W03-Listing": "Plainly · Listing detail PL-24817 (web)",
+  "W08-SignIn": "Plainly · Sign in or sign up (web)",
+  "W11-Account": "Plainly · Seeker account (web)",
+  "W09-Messages": "Plainly · Messages (web)",
+  "W04-OwnerDash": "Plainly · Owner dashboard",
+  "W10-CreateListing": "Plainly · Create listing (web)",
+  "W05-DealRoom": "Plainly · Deal room",
+  "W06-Billing": "Plainly · Billing",
+  "X06-DevProject": "Plainly · Developer project",
+  "W12-AdminVerify": "Plainly · Back office · Verification queue",
+  "W16-AdminModeration": "Plainly · Back office · Listing moderation",
+  "W13-AdminDisputes": "Plainly · Back office · Disputes",
+  "W07-Admin": "Plainly · Back office · Leakage case",
+  "W14-AdminRevenue": "Plainly · Back office · KPIs and revenue",
+  "W15-AdminConfig": "Plainly · Back office · Configuration"
+}
