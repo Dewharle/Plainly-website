@@ -16,6 +16,17 @@ npm run build && npm start
 
 Open **/screens** for an index of every screen.
 
+## Deploy to Vercel
+
+```bash
+npm run vercel:link    # one-time: log in and link this folder to a Vercel project
+npm run deploy         # preview deployment
+npm run deploy:prod    # production deployment
+```
+
+Or skip the CLI entirely: import the GitHub repo at https://vercel.com/new —
+Vercel auto-detects Next.js and then redeploys on every push to `main`.
+
 ## Routes
 
 | Design artboard | Screen | Route |
